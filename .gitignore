@@ -1,0 +1,41 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Regenerable simulation artifacts and historical machine-local run directories
+/runs/
+*.raw
+*.log
+*.fft
+*.db
+*.bak
+*.bak-*
+*.measurements.json
+*.measurements.txt
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/
+
+# PCB editor recovery / cache files (source designs remain tracked)
+*-backups/
+*.kicad_prl
+*.lck
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+
+# Large unedited recordings; curated MP4 demo is tracked
+*.mov
+*.MOV

@@ -1,0 +1,26 @@
+BEST DESIGN IN THIS GRID
+K    = 4.8
+RL   = 0.13 MOhm
+Q    = 2.5
+freq = 9984.352 Hz
+Vpp  = 4.949660 V
+THD  = 0.002890 %
+SFDR = 90.783 dB
+All-bin SFDR = 90.783 dB
+cost = -88.329
+
+RESISTORS TO BUILD (each labelled resistor):
+R1   = 1647 ohm : 47 + 270 + 330 + 1000 ohm
+R2   = 1647 ohm : 47 + 270 + 330 + 1000 ohm
+R3   = 1647 ohm : 47 + 270 + 330 + 1000 ohm
+R4   = 1647 ohm : 47 + 270 + 330 + 1000 ohm
+R_G  = 10000 ohm : 10000 ohm
+R_F  = 48000 ohm : 1000 + 47000 ohm
+R5   = 130000 ohm : 10000 + 20000 + 100000 ohm
+R7   = 130000 ohm : 10000 + 20000 + 100000 ohm
+R6   = 325000 ohm : 300000 + 20000 + 4700 + 200 + 100 ohm
+R8   = 325000 ohm : 300000 + 20000 + 4700 + 200 + 100 ohm
+R9   = 1900 ohm : 220 + 680 + 1000 ohm
+R10  = 1900 ohm : 220 + 680 + 1000 ohm
+R11  = 1960.78431 ohm : 2000 || 100000 ohm
+R12  = 1000 ohm : 1000 ohm

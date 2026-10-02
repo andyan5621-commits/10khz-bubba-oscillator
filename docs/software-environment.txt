@@ -1,0 +1,30 @@
+Repository packaging validation: 2026-10-02
+Platform: Windows
+Python: 3.14.4 (64-bit)
+
+Existing project environment:
+numpy==2.5.2
+scipy==1.18.1
+pandas==3.0.5
+psutil==7.2.2
+tqdm==4.70.0
+PyLTSpice==6.0.1
+spicelib==1.6.3
+
+Validation completed:
+- All five Python source files parsed successfully.
+- Buildable_sweep.py --dry-run generated 32 stock-valid candidates.
+- Measure_Oscillator_Final.py analyzed a copy of the existing completed raw file.
+  Frequency: 9984.352 Hz
+  Vpp: 4.952940 V
+  Harmonic SFDR: 90.783 dB
+  All-bin SFDR: 90.783 dB
+  THD: 0.002890 percent
+  Settled: True
+- Archived timing-corner CSV contains 256 rows, with 46 frequency failures.
+- Relative Markdown links and packaged source checksums verified.
+
+The raw-file analysis verifies the packaged analysis path against saved data.
+It does not constitute a new LTspice run, fresh hardware measurement, or rerun
+of the entire optimization/tolerance study. Linux/Wine execution is untested.
+The large raw file and generated verification outputs are excluded from Git.

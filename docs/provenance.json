@@ -1,0 +1,192 @@
+{
+  "packaging_date": "2026-10-02",
+  "files": [
+    {
+      "repository_file": "simulation/ltspice/Oscillator_Final.asc",
+      "source_file": "Oscillator_Final.asc",
+      "source_sha256": "da4b98038b60d70400ae0741bda58249105d45bfe32df0b7fad7d45102044b97",
+      "repository_sha256": "9cf1a80abfc234e349f1f6e360b2c0753d4f30ee781563439d3dcbf7507ab0e0"
+    },
+    {
+      "repository_file": "simulation/ltspice/Oscillator.asc",
+      "source_file": "Oscillator.asc",
+      "source_sha256": "06739d81acb533a7885fbe759e1d855d21dacd92b390a57b82b9ba8f4c46e8de",
+      "repository_sha256": "a0c02ed8dd1c70821079d2f24de056b5cdefff1403757b0597eb837f4518e85d"
+    },
+    {
+      "repository_file": "simulation/ltspice/OPA1656_channel.asy",
+      "source_file": "OPA1656_channel.asy",
+      "source_sha256": "49e24cd895b450445eb724da95a44761e2ac3acf4776f23a271d7867d54559c2",
+      "repository_sha256": "1d53973274974a894d8110ffe1910e1419d4ac1d816a92209895e7a1ceda1bd7"
+    },
+    {
+      "repository_file": "simulation/ltspice/OPA1656.LIB",
+      "source_file": "OPA1656.LIB",
+      "source_sha256": "9847ed60c62e792ee6f1c84899278a3c11ce71a6d21804bdd88f51199f1ba055",
+      "repository_sha256": "0543a32a8ac9222194bb5a6d2e0bbbd55fa0395bb449d88982e5bf4575eb403e"
+    },
+    {
+      "repository_file": "simulation/ltspice/1N4148_ON.lib",
+      "source_file": "1N4148_ON.lib",
+      "source_sha256": "4484513221e5896084935542dcd4558a40853a9ca6cb70cdf05a210b987c1cca",
+      "repository_sha256": "2b0b01d6290273aae6c9c6aeb83c065da40a96dde335c18f0bb8b15fe0c8b9cc"
+    },
+    {
+      "repository_file": "simulation/scripts/Buildable_sweep.py",
+      "source_file": "Buildable_sweep.py",
+      "source_sha256": "f8de63d795d5d260e2b3bf4f2998565e719874f28f0719b14f7597713acc06e6",
+      "repository_sha256": "73ea5c25eda5c7cd642afa783e0b9fdbf6f6dcdf560e8dc8de11129e5d1859a7"
+    },
+    {
+      "repository_file": "simulation/scripts/Measure_Oscillator_Final.py",
+      "source_file": "Measure_Oscillator_Final.py",
+      "source_sha256": "0fc56ce562671be4d5cb67edf09ca3a0bdf6001b8bc187f2d78a00eccb5d25c7",
+      "repository_sha256": "f79df5dc609c8b69b29559476a5124a28928c8c262cd0b62d99494d201077505"
+    },
+    {
+      "repository_file": "simulation/scripts/tolerance_final.py",
+      "source_file": "tolerance_final.py",
+      "source_sha256": "c5df7f25059241b8d282bca5e5d1e18ff6b0a12f4181f63eb720dc88d8855418",
+      "repository_sha256": "5ad5c25fb51f766348cd16de88eaabc95f2f758cf1dc6701d050e21869bc75d4"
+    },
+    {
+      "repository_file": "simulation/scripts/oscillator_measurements.py",
+      "source_file": "oscillator_measurements.py",
+      "source_sha256": "9d6e4be2424813c7d1a1d0fd50cee2ac82f3ae33bf67c6780c1de9b7b87c01a1",
+      "repository_sha256": "76ef4f1cb249057dae4e239938bf1b5f64bb65c2075cba9691b5f5d73128436e"
+    },
+    {
+      "repository_file": "simulation/scripts/Oscilator.py",
+      "source_file": "Oscilator.py",
+      "source_sha256": "d1922f84a033fce8cad518f929743cde031f3b38d5892483414203d720b19812",
+      "repository_sha256": "ea8781fecbeecb706f4ea64031230fdbd0738e9550cf929142aa9db06584e739"
+    },
+    {
+      "repository_file": "results/discrete-optimization/best.json",
+      "source_file": "best.json",
+      "source_sha256": "c4ecb459d89400f1d8145551439bd96ad93135ef560edea842ac70b222f79a00",
+      "repository_sha256": "ed891231398e3c6f7366b141525ccd41f2b5dc7cf2fdaf070b3aec386a4ef08a"
+    },
+    {
+      "repository_file": "results/discrete-optimization/summary.txt",
+      "source_file": "summary.txt",
+      "source_sha256": "3b767532da1e4e70a4c5648572acbfe262fd4baa8b3bbb0876bf35e2d73fa93f",
+      "repository_sha256": "c54a862bc3c9d294cb0b55c44c378c8565d57d378db317a82fb2e39d7319c96e"
+    },
+    {
+      "repository_file": "results/discrete-optimization/sweep_plan.json",
+      "source_file": "sweep_plan.json",
+      "source_sha256": "12e59150578ab487c6927457f9b0c43e09024cb83e23ad4d21b39823dea50abf",
+      "repository_sha256": "89a3f8105122d00471abc87f46ffdf4d4e4c302cc3b2f60513c214ad9545501e"
+    },
+    {
+      "repository_file": "results/discrete-optimization/measurements.jsonl",
+      "source_file": "measurements.jsonl",
+      "source_sha256": "593c71ac283a2f5a52a104539ce74bdc35311db4dbd27f19b310a206b1d83162",
+      "repository_sha256": "f079c06324bb774baf5b859d089ce17548bc39f20a66ece7afc5b511094d68dd"
+    },
+    {
+      "repository_file": "results/tolerance/RC_sweep.csv",
+      "source_file": "RC_sweep.csv",
+      "source_sha256": "9e472b5e76b84961b583c42b75b625a708883ee035f6d7b79baf27e6e8b32779",
+      "repository_sha256": "0a463c388f7cd116ed831e33331e4c92fbe6b166a921b7006c9f89d99192c837"
+    },
+    {
+      "repository_file": "results/tolerance/rgfr_sweep.csv",
+      "source_file": "rgfr_sweep.csv",
+      "source_sha256": "3017513136bdcdf8fbbaf05cd72342c224dfff2e0e803639caeb82627ab3ef0c",
+      "repository_sha256": "0ad3843f72c756ec246b456ce1c576482b1f81d5a02070bcaa71d52cf3f6917f"
+    },
+    {
+      "repository_file": "results/tolerance/nominal.csv",
+      "source_file": "nominal.csv",
+      "source_sha256": "9e8beb43519e261aeba6ae4dd5a39db46b8624e24e93536ea86f1b9576f32497",
+      "repository_sha256": "bca2c37f106d34354689bb2624c109a661269ab1a307133978d46f046036f2f5"
+    },
+    {
+      "repository_file": "simulation/ltspice/optimized_best.net",
+      "source_file": "best.net",
+      "source_sha256": "6865e65e1b961c9574af58c6e5ffd097800625e08dfe44222d1347cf80033059",
+      "repository_sha256": "13ead7dfeb4cc2d078210ec87ca0c20d84a942f464530d8774327d9bf5f28c71"
+    },
+    {
+      "repository_file": "docs/images/architecture-block-diagram.png",
+      "source_file": "figure-16.png",
+      "source_sha256": "a7b435caa26382415543d47fac103ea3a75654eaf8854a281fa0bd7c09bc0b98",
+      "repository_sha256": "a7b435caa26382415543d47fac103ea3a75654eaf8854a281fa0bd7c09bc0b98"
+    },
+    {
+      "repository_file": "docs/images/oscillator-core-schematic.png",
+      "source_file": "figure-20.png",
+      "source_sha256": "5e51d787338381fac32f20054706e4d427d424ae98ae458bb716820d590b9a3f",
+      "repository_sha256": "5e51d787338381fac32f20054706e4d427d424ae98ae458bb716820d590b9a3f"
+    },
+    {
+      "repository_file": "docs/images/filter-output-schematic.png",
+      "source_file": "figure-22.png",
+      "source_sha256": "930212a4b149005cada51985ddbeffb34e6c4f58161976ff0e3ebcda505f9b6d",
+      "repository_sha256": "930212a4b149005cada51985ddbeffb34e6c4f58161976ff0e3ebcda505f9b6d"
+    },
+    {
+      "repository_file": "docs/images/potentiometer-decoupling.png",
+      "source_file": "figure-37.png",
+      "source_sha256": "b734b4f0ac650bec6c05264e9b16698b5226782e6935c246edd2e98954b1c6b0",
+      "repository_sha256": "b734b4f0ac650bec6c05264e9b16698b5226782e6935c246edd2e98954b1c6b0"
+    },
+    {
+      "repository_file": "docs/images/breadboard-annotated.png",
+      "source_file": "figure-45.png",
+      "source_sha256": "2105be2eca8673db84deda8cb4cf77f3d7bfcc332373c646f3f1f59d2a816b01",
+      "repository_sha256": "2105be2eca8673db84deda8cb4cf77f3d7bfcc332373c646f3f1f59d2a816b01"
+    },
+    {
+      "repository_file": "docs/images/filter-response.png",
+      "source_file": "figure-119.png",
+      "source_sha256": "64b36b09e6e27067b3266d6df83f4bc1204ee3dc6ca23c33cf2e209afaaabc5d",
+      "repository_sha256": "64b36b09e6e27067b3266d6df83f4bc1204ee3dc6ca23c33cf2e209afaaabc5d"
+    },
+    {
+      "repository_file": "docs/images/spectrum-full-output.png",
+      "source_file": "figure-179.png",
+      "source_sha256": "40707b840990a474904886d93e867aa0e8f36663f8072d4ff503b34a4b042bf2",
+      "repository_sha256": "40707b840990a474904886d93e867aa0e8f36663f8072d4ff503b34a4b042bf2"
+    },
+    {
+      "repository_file": "docs/images/spectrum-lower-output.png",
+      "source_file": "figure-181.png",
+      "source_sha256": "27c3e487aaf2ab7c8ee45d078c70931e5963f7f7d0841e0c21e4ce14355a19c3",
+      "repository_sha256": "27c3e487aaf2ab7c8ee45d078c70931e5963f7f7d0841e0c21e4ce14355a19c3"
+    },
+    {
+      "repository_file": "docs/images/scope-5v07.png",
+      "source_file": "figure-185.png",
+      "source_sha256": "958037ab3262d58748c3727b9d2f3e97dad6fa6c3a18539d3d6a8172d14b9427",
+      "repository_sha256": "958037ab3262d58748c3727b9d2f3e97dad6fa6c3a18539d3d6a8172d14b9427"
+    },
+    {
+      "repository_file": "docs/images/scope-3v82.png",
+      "source_file": "figure-187.png",
+      "source_sha256": "dadccaff5e0f66b23508e94e7c5b78876ce5fc236236f5b814d8ac1383b2515e",
+      "repository_sha256": "dadccaff5e0f66b23508e94e7c5b78876ce5fc236236f5b814d8ac1383b2515e"
+    },
+    {
+      "repository_file": "docs/images/scope-0v800.png",
+      "source_file": "figure-189.png",
+      "source_sha256": "768b84dd0e14fca4f8ffc2df0a89b650f82fac561772e01fc1c1a506f625ce43",
+      "repository_sha256": "768b84dd0e14fca4f8ffc2df0a89b650f82fac561772e01fc1c1a506f625ce43"
+    },
+    {
+      "repository_file": "evidence/Oscillator_demo_10_seconds.mp4",
+      "source_file": "Oscillator_demo_10_seconds.mp4",
+      "source_sha256": "c1f63843d0db03011393f02dfe90cbd094c87db536e32dfad41a21e2d78cbd28",
+      "repository_sha256": "c1f63843d0db03011393f02dfe90cbd094c87db536e32dfad41a21e2d78cbd28"
+    },
+    {
+      "repository_file": "docs/report/Oscillator_lab_report_performance_complete.docx",
+      "source_file": "Oscillator_lab_report_performance_complete.docx",
+      "source_sha256": "0a5b4a3a0305fe4f034d8093eceadc3076dad123e7c3bf7e06986df56aaad56e",
+      "repository_sha256": "0a5b4a3a0305fe4f034d8093eceadc3076dad123e7c3bf7e06986df56aaad56e"
+    }
+  ],
+  "repository_hash_convention": "SHA-256 of Git-tracked blob bytes after .gitattributes line-ending normalization; source hashes are original file bytes."
+}

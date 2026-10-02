@@ -1,0 +1,8 @@
+# Versions validated on the existing project environment are recorded in docs/software-environment.txt.
+numpy
+scipy
+pandas
+psutil
+tqdm
+PyLTSpice
+spicelib
