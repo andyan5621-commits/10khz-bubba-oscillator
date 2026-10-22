@@ -1,0 +1,345 @@
+{
+  "package": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\fabrication\\review-packages\\R1-review-02",
+  "inspected_utc": "2026-10-22T00:53:02.206045+00:00",
+  "parser_version": "1.6.3",
+  "failures": [],
+  "notes": [
+    "Extent containment is a range check only; inspect the generated overlays for true registration and polarity.",
+    "Gerber positive/negative image semantics are parser-rendered; solder-mask openings must be checked visually."
+  ],
+  "manifest": {
+    "present": true,
+    "entries": 48,
+    "verified": true,
+    "mismatches": []
+  },
+  "native_board": {
+    "board_file": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\fabrication\\review-packages\\R1-review-02\\source\\oscillator.kicad_pcb",
+    "sha256": "83c42e0e6dd5e9724a504b3fcdf5f9cd6286b4cc8741df543c93aea8980987d1",
+    "footprints": 81,
+    "electrical_footprints": 77,
+    "npth_mount_footprints": 4,
+    "segments": 591,
+    "vias": 39,
+    "pads": 180,
+    "pth_round_pads": 46,
+    "pth_slots": 2,
+    "npth_pads": 4,
+    "pad_drill_sizes_mm": {
+      "0.800x0.800": 8,
+      "0.850x0.850": 28,
+      "0.890x0.890": 2,
+      "1.000x1.000": 3,
+      "1.200x1.200": 3,
+      "2.010x2.010": 2,
+      "2.100x1.800": 2,
+      "2.700x2.700": 4
+    },
+    "edge_bbox_width_mm": 95.05,
+    "edge_bbox_height_mm": 79.05
+  },
+  "generator": "kicad",
+  "board_name": "oscillator-B",
+  "board_bounds": {
+    "min_x_mm": 49.975,
+    "min_y_mm": -126.025,
+    "max_x_mm": 145.025,
+    "max_y_mm": -46.975,
+    "width_mm": 95.05000000000001,
+    "height_mm": 79.05000000000001
+  },
+  "outline_polygon_count": 1,
+  "outline_centerline_bounds": {
+    "min_x_mm": 50.0,
+    "min_y_mm": -126.0,
+    "max_x_mm": 145.0,
+    "max_y_mm": -47.0,
+    "width_mm": 95.0,
+    "height_mm": 79.0
+  },
+  "layers": [
+    {
+      "role": "bottom copper",
+      "file": "oscillator-B_Cu.gbl",
+      "x2_file_function": [
+        "Copper",
+        "L2",
+        "Bot"
+      ],
+      "bounds": {
+        "min_x_mm": 50.5005,
+        "min_y_mm": -125.4995,
+        "max_x_mm": 144.4995,
+        "max_y_mm": -47.5005,
+        "width_mm": 93.99900000000001,
+        "height_mm": 77.999
+      },
+      "within_outline_range": true
+    },
+    {
+      "role": "bottom mask",
+      "file": "oscillator-B_Mask.gbs",
+      "x2_file_function": [
+        "Soldermask",
+        "Bot"
+      ],
+      "bounds": {
+        "min_x_mm": 52.104316,
+        "min_y_mm": -123.895684,
+        "max_x_mm": 142.895684,
+        "max_y_mm": -49.104316,
+        "width_mm": 90.79136799999999,
+        "height_mm": 74.791368
+      },
+      "within_outline_range": true
+    },
+    {
+      "role": "bottom silk",
+      "file": "oscillator-B_Silkscreen.gbo",
+      "x2_file_function": [
+        "Legend",
+        "Bot"
+      ],
+      "bounds": {
+        "min_x_mm": 52.104316,
+        "min_y_mm": -123.895684,
+        "max_x_mm": 142.895684,
+        "max_y_mm": -49.104316,
+        "width_mm": 90.79136799999999,
+        "height_mm": 74.791368
+      },
+      "within_outline_range": true
+    },
+    {
+      "role": "mechanical outline",
+      "file": "oscillator-Edge_Cuts.gm1",
+      "x2_file_function": [
+        "Profile",
+        "NP"
+      ],
+      "bounds": {
+        "min_x_mm": 49.975,
+        "min_y_mm": -126.025,
+        "max_x_mm": 145.025,
+        "max_y_mm": -46.975,
+        "width_mm": 95.05000000000001,
+        "height_mm": 79.05000000000001
+      },
+      "within_outline_range": true
+    },
+    {
+      "role": "top copper",
+      "file": "oscillator-F_Cu.gtl",
+      "x2_file_function": [
+        "Copper",
+        "L1",
+        "Top"
+      ],
+      "bounds": {
+        "min_x_mm": 53.6,
+        "min_y_mm": -115.75,
+        "max_x_mm": 138.78,
+        "max_y_mm": -55.8,
+        "width_mm": 85.18,
+        "height_mm": 59.95
+      },
+      "within_outline_range": true
+    },
+    {
+      "role": "top mask",
+      "file": "oscillator-F_Mask.gts",
+      "x2_file_function": [
+        "Soldermask",
+        "Top"
+      ],
+      "bounds": {
+        "min_x_mm": 52.104316,
+        "min_y_mm": -123.895684,
+        "max_x_mm": 142.895684,
+        "max_y_mm": -49.104316,
+        "width_mm": 90.79136799999999,
+        "height_mm": 74.791368
+      },
+      "within_outline_range": true
+    },
+    {
+      "role": "top silk",
+      "file": "oscillator-F_Silkscreen.gto",
+      "x2_file_function": [
+        "Legend",
+        "Top"
+      ],
+      "bounds": {
+        "min_x_mm": 52.104316,
+        "min_y_mm": -124.363152,
+        "max_x_mm": 142.895684,
+        "max_y_mm": -49.104316,
+        "width_mm": 90.79136799999999,
+        "height_mm": 75.258836
+      },
+      "within_outline_range": true
+    }
+  ],
+  "drills": {
+    "pth": {
+      "file": "oscillator-PTH.drl",
+      "plating_interpretation": "unknown plating",
+      "x2_file_function": [
+        "Plated",
+        "1",
+        "2",
+        "PTH"
+      ],
+      "drills": 85,
+      "slots": 2,
+      "objects": 87,
+      "bounds": {
+        "min_x_mm": 55.4,
+        "min_y_mm": -114.15,
+        "max_x_mm": 138.135,
+        "max_y_mm": -57.2,
+        "width_mm": 82.73499999999999,
+        "height_mm": 56.95
+      },
+      "tools": [
+        {
+          "diameter_or_width_mm": 0.3,
+          "objects": 39,
+          "drills": 39,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        },
+        {
+          "diameter_or_width_mm": 0.8,
+          "objects": 8,
+          "drills": 8,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        },
+        {
+          "diameter_or_width_mm": 0.85,
+          "objects": 28,
+          "drills": 28,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        },
+        {
+          "diameter_or_width_mm": 0.89,
+          "objects": 2,
+          "drills": 2,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        },
+        {
+          "diameter_or_width_mm": 1.0,
+          "objects": 3,
+          "drills": 3,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        },
+        {
+          "diameter_or_width_mm": 1.2,
+          "objects": 3,
+          "drills": 3,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        },
+        {
+          "diameter_or_width_mm": 1.8,
+          "objects": 2,
+          "drills": 0,
+          "slots": 2,
+          "slot_cut_lengths_mm": [
+            0.30000000000001137,
+            0.30000000000001137
+          ]
+        },
+        {
+          "diameter_or_width_mm": 2.01,
+          "objects": 2,
+          "drills": 2,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        }
+      ],
+      "within_outline_range": true
+    },
+    "npth": {
+      "file": "oscillator-NPTH.drl",
+      "plating_interpretation": "unknown plating",
+      "x2_file_function": [
+        "NonPlated",
+        "1",
+        "2",
+        "NPTH"
+      ],
+      "drills": 4,
+      "slots": 0,
+      "objects": 4,
+      "bounds": {
+        "min_x_mm": 52.15,
+        "min_y_mm": -123.85,
+        "max_x_mm": 142.85,
+        "max_y_mm": -49.15,
+        "width_mm": 90.69999999999999,
+        "height_mm": 74.69999999999999
+      },
+      "tools": [
+        {
+          "diameter_or_width_mm": 2.7,
+          "objects": 4,
+          "drills": 4,
+          "slots": 0,
+          "slot_cut_lengths_mm": []
+        }
+      ],
+      "within_outline_range": true
+    }
+  },
+  "gerber_job": {
+    "file": "oscillator-job.gbrjob",
+    "generation_software": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "9.0.6"
+    },
+    "creation_date": "2026-10-22T02:50:07+02:00",
+    "general_specs": {
+      "ProjectId": {
+        "Name": "oscillator",
+        "GUID": "6f736369-6c6c-4617-946f-722e6b696361",
+        "Revision": "rev?"
+      },
+      "Size": {
+        "X": 95.05,
+        "Y": 79.05
+      },
+      "LayerNumber": 2,
+      "BoardThickness": 1.6,
+      "Finish": "None"
+    },
+    "listed_plot_files": [
+      "oscillator-B_Cu.gbl",
+      "oscillator-B_Mask.gbs",
+      "oscillator-B_Silkscreen.gbo",
+      "oscillator-Edge_Cuts.gm1",
+      "oscillator-F_Cu.gtl",
+      "oscillator-F_Mask.gts",
+      "oscillator-F_Silkscreen.gto"
+    ]
+  },
+  "gerber_directory_files": [
+    "oscillator-B_Cu.gbl",
+    "oscillator-B_Mask.gbs",
+    "oscillator-B_Silkscreen.gbo",
+    "oscillator-Edge_Cuts.gm1",
+    "oscillator-F_Cu.gtl",
+    "oscillator-F_Mask.gts",
+    "oscillator-F_Silkscreen.gto",
+    "oscillator-NPTH.drl",
+    "oscillator-PTH.drl",
+    "oscillator-job.gbrjob"
+  ],
+  "unrecognized_files": [],
+  "automated_result": "PASS (manual gates pending)"
+}

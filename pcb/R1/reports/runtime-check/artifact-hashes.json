@@ -1,0 +1,54 @@
+[
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\baseline.net",
+    "Hash": "A91296911CCF99E2320ADA36BC12CEB669C9AE92EEA55CD0224C4C49593FAC09"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_full.net",
+    "Hash": "E96A5E5DE8B9133D463B40C5EDBF34645191EB932B88AD82B3DE54F2403DD2C5"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_mid.net",
+    "Hash": "B0C91B5A8DA57FE2446657A3034543539B921C7A3D1DACFC59505DDC05943CB9"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_startup.net",
+    "Hash": "8C9A919E42F59B79D198A9062B17F4693F6878769E94FE0EF5756C4BA683EDB8"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\baseline.op.raw",
+    "Hash": "BC02A40E50C97929E6F693F93BCC2514417A54A17D17BD73D4FEB836E7FDE679"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\baseline.raw",
+    "Hash": "7A63877E647F1D1809FF32E450919D9158B2E305BF0414B616A49CA75026651C"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_full.op.raw",
+    "Hash": "420558CE83DF74E757015A8111D9442C136442EE4F8975DBCFDF4ADCFA98C1C4"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_full.raw",
+    "Hash": "A925614F2D861F3854CB1A7D164451486DA0AA576FA92272DD9E205D6B52770B"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_mid.op.raw",
+    "Hash": "8CA0C241AE94CA651EB26A6C6AF7831FAC1AC85DEBF8D997386AFC04D326E4A2"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_mid.raw",
+    "Hash": "8AF4939EBF19AACE250FBA89FD32F1D816E118E8717BBBA1CF6EB66600CF34F1"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_startup.op.raw",
+    "Hash": "197CA14AF3773E4A41D21A337E6A2D9E4E8FCEE67C12C0D3A3939CA96C7A8690"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\hardware_startup.raw",
+    "Hash": "BE4D886D7507052CCA55D178E9D0BBDB87C8DBC0EA4363C33CD9358956C4A870"
+  },
+  {
+    "Path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents\\ChatGPT\\Oscillator PCB development\\oscillator-pcb\\reports\\runtime-check\\oscillator_measurements.py",
+    "Hash": "9D6E4BE2424813C7D1A1D0FD50CEE2AC82F3AE33BF67C6780C1DE9B7B87C01A1"
+  }
+]

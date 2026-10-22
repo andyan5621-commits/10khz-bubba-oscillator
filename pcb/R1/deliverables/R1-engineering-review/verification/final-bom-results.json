@@ -1,0 +1,7 @@
+{
+  "scope": "Complete reference/value/footprint parity; populated schematic MPNs agree. Resistor MPN sourcing stays in BOM, as schematic resistor MPN fields are absent.",
+  "verdict": "PASS",
+  "components": 77,
+  "resistors": 44,
+  "failures": []
+}

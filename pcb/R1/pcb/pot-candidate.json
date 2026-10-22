@@ -1,0 +1,9 @@
+{
+  "candidate_mpn": "Alps Alpine RK09K1130A5R",
+  "candidate_library_footprint": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical",
+  "status": "USER_APPROVED_EXACT_MPN; manufacturer drawing No.3 and installed footprint independently compared: PASS",
+  "not_equivalent_to_verified_stock": "TinyTronics RV09-10K SKU001720 is unverified and must not be treated as this exact Alps part",
+  "electrical_requirement": "10k linear; pin1 VFINAL, pin2 OUTPUT wiper, pin3 GND; physical rotation direction to be checked",
+  "placement_reservation": "upper right; pin1 at x123,y60 mm; 0 degree rotation",
+  "manufacturing_release": false
+}

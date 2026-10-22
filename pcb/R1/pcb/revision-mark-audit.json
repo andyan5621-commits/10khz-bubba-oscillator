@@ -1,0 +1,14 @@
+{
+  "board_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "revision_silkscreen": "10 kHz OSCILLATOR  |  R1",
+  "title_revision": "R1",
+  "finish": "ENIG",
+  "nominal_stackup_mm": {
+    "F.Mask": 0.01,
+    "F.Cu": 0.035,
+    "FR4": 1.51,
+    "B.Cu": 0.035,
+    "B.Mask": 0.01
+  },
+  "pads_tracks_placement_unchanged": true
+}

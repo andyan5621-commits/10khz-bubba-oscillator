@@ -1,0 +1,249 @@
+{
+  "name": "par_limiter_1pf",
+  "kind": "simulation sensitivity, not PCB extraction or hardware measurement",
+  "assumption": "1 pF from each limiter threshold node to ground; symmetric bound",
+  "pcb_nodes": [
+    "LIM_P",
+    "LIM_N"
+  ],
+  "added_elements": [
+    "C_PAR_LIMP N002 0 1p",
+    "C_PAR_LIMN N005 0 1p"
+  ],
+  "reference_deck": "hardware_full_reference.net",
+  "saved_end_s": 0.05,
+  "ltspice_exit_code": 0,
+  "elapsed_s": 188.15167419999852,
+  "method": "same coherent 20-cycle interpolation and H2-H40 analysis as nominal validation",
+  "metrics": {
+    "freq": 9984.53835792276,
+    "Vpp": 4.640480680182957,
+    "Vmax": 2.3209569787165134,
+    "Vmin": -2.3195237014664434,
+    "THD": 0.0028839974430989812,
+    "SFDR": 90.80172384406588,
+    "SFDR_all_bins": 90.80172384406588,
+    "largest_spur": 2.8834591809482024e-05,
+    "largest_harmonic": 3,
+    "largest_spur_frequency": 29953.615073768284,
+    "resolution_hz": 499.226917896138,
+    "bandwidth_hz": 399381.53431691043,
+    "harmonics": {
+      "1": {
+        "frequency": 9984.53835792276,
+        "fourier": 2.320292783396698,
+        "normalized": 1.0
+      },
+      "2": {
+        "frequency": 19969.07671584552,
+        "fourier": 9.673244564114905e-07,
+        "normalized": 4.1689758436235594e-07
+      },
+      "3": {
+        "frequency": 29953.61507376828,
+        "fourier": 6.690469528773068e-05,
+        "normalized": 2.8834591809482024e-05
+      },
+      "4": {
+        "frequency": 39938.15343169104,
+        "fourier": 3.4285521850128414e-09,
+        "normalized": 1.477637740179389e-09
+      },
+      "5": {
+        "frequency": 49922.691789613804,
+        "fourier": 6.890062373241647e-07,
+        "normalized": 2.969479723655918e-07
+      },
+      "6": {
+        "frequency": 59907.23014753656,
+        "fourier": 9.856679178620465e-10,
+        "normalized": 4.248032510876141e-10
+      },
+      "7": {
+        "frequency": 69891.76850545932,
+        "fourier": 1.0610421834825394e-07,
+        "normalized": 4.572880591083294e-08
+      },
+      "8": {
+        "frequency": 79876.30686338208,
+        "fourier": 2.672877105318943e-10,
+        "normalized": 1.151956823916891e-10
+      },
+      "9": {
+        "frequency": 89860.84522130484,
+        "fourier": 3.8456047877209275e-07,
+        "normalized": 1.6573791097567053e-07
+      },
+      "10": {
+        "frequency": 99845.38357922761,
+        "fourier": 9.801313756679616e-10,
+        "normalized": 4.2241711161689617e-10
+      },
+      "11": {
+        "frequency": 109829.92193715036,
+        "fourier": 3.589949717048647e-08,
+        "normalized": 1.5471968635756762e-08
+      },
+      "12": {
+        "frequency": 119814.46029507312,
+        "fourier": 2.998972754233592e-10,
+        "normalized": 1.2924975570726759e-10
+      },
+      "13": {
+        "frequency": 129798.99865299588,
+        "fourier": 2.388671457999273e-07,
+        "normalized": 1.0294698475519434e-07
+      },
+      "14": {
+        "frequency": 139783.53701091863,
+        "fourier": 7.828629080795329e-10,
+        "normalized": 3.3739832907358036e-10
+      },
+      "15": {
+        "frequency": 149768.0753688414,
+        "fourier": 4.313839124919733e-08,
+        "normalized": 1.8591787880340963e-08
+      },
+      "16": {
+        "frequency": 159752.61372676416,
+        "fourier": 4.0553725866752817e-10,
+        "normalized": 1.747784855296832e-10
+      },
+      "17": {
+        "frequency": 169737.1520846869,
+        "fourier": 1.4864622276049175e-07,
+        "normalized": 6.406356293660801e-08
+      },
+      "18": {
+        "frequency": 179721.6904426097,
+        "fourier": 5.931342073191031e-10,
+        "normalized": 2.556290359403732e-10
+      },
+      "19": {
+        "frequency": 189706.22880053244,
+        "fourier": 5.2950457414319077e-08,
+        "normalized": 2.2820593070502257e-08
+      },
+      "20": {
+        "frequency": 199690.76715845522,
+        "fourier": 4.3261355241562465e-10,
+        "normalized": 1.8644782913228636e-10
+      },
+      "21": {
+        "frequency": 209675.30551637796,
+        "fourier": 8.897344965002861e-08,
+        "normalized": 3.834578562097648e-08
+      },
+      "22": {
+        "frequency": 219659.8438743007,
+        "fourier": 4.336906160380832e-10,
+        "normalized": 1.869120221126575e-10
+      },
+      "23": {
+        "frequency": 229644.3822322235,
+        "fourier": 4.8898962721277666e-08,
+        "normalized": 2.1074479510165103e-08
+      },
+      "24": {
+        "frequency": 239628.92059014624,
+        "fourier": 3.982041664950312e-10,
+        "normalized": 1.7161806878186142e-10
+      },
+      "25": {
+        "frequency": 249613.458948069,
+        "fourier": 5.123159469847515e-08,
+        "normalized": 2.2079797457059168e-08
+      },
+      "26": {
+        "frequency": 259597.99730599177,
+        "fourier": 3.154917394225496e-10,
+        "normalized": 1.3597065925477661e-10
+      },
+      "27": {
+        "frequency": 269582.5356639145,
+        "fourier": 3.700887084865716e-08,
+        "normalized": 1.5950086606949464e-08
+      },
+      "28": {
+        "frequency": 279567.07402183727,
+        "fourier": 3.303450692901664e-10,
+        "normalized": 1.4237214874519897e-10
+      },
+      "29": {
+        "frequency": 289551.61237976,
+        "fourier": 3.0872059754473e-08,
+        "normalized": 1.3305243189731905e-08
+      },
+      "30": {
+        "frequency": 299536.1507376828,
+        "fourier": 2.3282455548476307e-10,
+        "normalized": 1.0034274861809856e-10
+      },
+      "31": {
+        "frequency": 309520.6890956056,
+        "fourier": 2.272257978469746e-08,
+        "normalized": 9.792979552965581e-09
+      },
+      "32": {
+        "frequency": 319505.2274535283,
+        "fourier": 2.570064879162286e-10,
+        "normalized": 1.10764680110755e-10
+      },
+      "33": {
+        "frequency": 329489.76581145107,
+        "fourier": 2.1811919380927784e-08,
+        "normalized": 9.400503047290918e-09
+      },
+      "34": {
+        "frequency": 339474.3041693738,
+        "fourier": 1.7292816554042177e-10,
+        "normalized": 7.452859689856495e-11
+      },
+      "35": {
+        "frequency": 349458.8425272966,
+        "fourier": 9.944778217094251e-09,
+        "normalized": 4.2860014426869e-09
+      },
+      "36": {
+        "frequency": 359443.3808852194,
+        "fourier": 1.9503027224556725e-10,
+        "normalized": 8.405416490588771e-11
+      },
+      "37": {
+        "frequency": 369427.9192431421,
+        "fourier": 1.6518189223055767e-08,
+        "normalized": 7.1190107305659234e-09
+      },
+      "38": {
+        "frequency": 379412.4576010649,
+        "fourier": 1.3381056438365127e-10,
+        "normalized": 5.766968950692712e-11
+      },
+      "39": {
+        "frequency": 389396.9959589876,
+        "fourier": 1.9142073185958843e-09,
+        "normalized": 8.249852485399099e-10
+      },
+      "40": {
+        "frequency": 399381.53431691043,
+        "fourier": 1.48542399660735e-10,
+        "normalized": 6.401881724740031e-11
+      }
+    },
+    "window_start": 0.047945963139858855,
+    "window_end": 0.04994906025692586,
+    "amplitude_drift": 6.48421760729434e-10,
+    "frequency_drift": 9.788458932291633e-11,
+    "sfdr_change_db": 3.6267939265144378e-06,
+    "settled": true,
+    "Vpp_window": 4.640480597709455
+  },
+  "delta_vs_nominal": {
+    "frequency_hz": 0.1866336535440496,
+    "frequency_percent": 0.0018692616075455248,
+    "vpp_v": -0.0019381814389447527,
+    "vpp_percent": -0.041749387479173006,
+    "sfdr_db": 0.01837937988968008,
+    "thd_percentage_points": -6.115308868951796e-06
+  }
+}

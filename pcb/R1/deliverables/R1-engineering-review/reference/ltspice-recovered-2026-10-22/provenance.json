@@ -1,0 +1,78 @@
+{
+  "captured_at_local": "2026-10-22",
+  "search_scope": [
+    "C:\\Users\\20252928\\Documents",
+    "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Documents",
+    "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Desktop",
+    "C:\\Users\\20252928\\Desktop",
+    "C:\\Users\\20252928\\Downloads",
+    "C:\\Users\\20252928\\OneDrive",
+    "C:\\PythonSolvers\\Oscillator_works (followed from the recovered schematic comment)"
+  ],
+  "primary_electrical_source": {
+    "source_path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Desktop\\Oscillator works\\Oscillator_Final.asc",
+    "copied_to": "desktop-original/Oscillator_Final.asc",
+    "size_bytes": 6635,
+    "last_write_local": "2026-09-19T15:35:56.9684080+02:00",
+    "sha256": "DA4B98038B60D70400AE0741BDA58249105D45BFE32DF0B7FAD7D45102044B97",
+    "note": "Byte-identical to C:\\PythonSolvers\\Oscillator_works\\Oscillator_Final.asc and to the archived verification copy."
+  },
+  "files": [
+    {
+      "source_path": "C:\\Users\\20252928\\Documents\\Codex\\projects\\10khz-bubba-oscillator\\simulation\\ltspice\\Oscillator_Final.asc",
+      "copied_to": "packaged-copy/Oscillator_Final.asc",
+      "size_bytes": 6620,
+      "last_write_local": "2026-10-02T19:40:34.9504147+02:00",
+      "sha256": "617120E9475A232743465FD52DC9243DCDD9916340EE9E888FCE425C28CEFEB3",
+      "note": "Electrically identical to the primary source. The only line difference is a comment whose absolute script path was made repository-relative."
+    },
+    {
+      "source_path": "C:\\Users\\20252928\\Documents\\Codex\\projects\\10khz-bubba-oscillator\\simulation\\ltspice\\Oscillator.asc",
+      "copied_to": "packaged-copy/Oscillator.asc",
+      "size_bytes": 6585,
+      "last_write_local": "2026-10-02T19:40:34.9524150+02:00",
+      "sha256": "06739D81ACB533A7885FBE759E1D855D21DACD92B390A57B82B9BA8F4C46E8DE",
+      "note": "Parameter-sweep starting schematic, not the literal final-value schematic."
+    },
+    {
+      "source_path": "C:\\Users\\20252928\\Documents\\Codex\\projects\\10khz-bubba-oscillator\\simulation\\ltspice\\optimized_best.net",
+      "copied_to": "packaged-copy/optimized_best.net",
+      "size_bytes": 1798,
+      "last_write_local": "2026-10-02T19:40:34.9524150+02:00",
+      "sha256": "03569A380DC7D5B9E92B41CE9A4BA12BB2F88A819A0B38EDC86F064438F784D5",
+      "note": "Archived discrete-search winner with post-processing additions; useful corroboration, not the source of final physical connectivity."
+    },
+    {
+      "source_path": "C:\\PythonSolvers\\Oscillator_works\\oscillator\\verification\\20260919-163444-222590\\Oscillator_Final.net",
+      "copied_to": "desktop-original/Oscillator_Final.generated-20260919.net",
+      "size_bytes": 1834,
+      "sha256": "A91296911CCF99E2320ADA36BC12CEB669C9AE92EEA55CD0224C4C49593FAC09",
+      "note": "LTspice 26.0.2 generated netlist from the byte-identical primary schematic."
+    },
+    {
+      "source_path": "C:\\Users\\20252928\\Documents\\Codex\\projects\\10khz-bubba-oscillator\\simulation\\ltspice\\OPA1656.LIB",
+      "copied_to": "models/OPA1656.LIB",
+      "size_bytes": 17885,
+      "sha256": "9847ED60C62E792EE6F1C84899278A3C11CE71A6D21804BDD88F51199F1BA055"
+    },
+    {
+      "source_path": "C:\\Users\\20252928\\Documents\\Codex\\projects\\10khz-bubba-oscillator\\simulation\\ltspice\\OPA1656_channel.asy",
+      "copied_to": "models/OPA1656_channel.asy",
+      "size_bytes": 820,
+      "sha256": "49E24CD895B450445EB724DA95A44761E2AC3ACF4776F23A271D7867D54559C2"
+    },
+    {
+      "source_path": "C:\\Users\\20252928\\Documents\\Codex\\projects\\10khz-bubba-oscillator\\simulation\\ltspice\\1N4148_ON.lib",
+      "copied_to": "models/1N4148_ON.lib",
+      "size_bytes": 114,
+      "sha256": "4484513221E5896084935542DCD4558A40853A9CA6CB70CDF05A210B987C1CCA"
+    }
+  ],
+  "supporting_report": {
+    "source_path": "C:\\Users\\20252928\\OneDrive - TU Eindhoven\\Desktop\\Oscillator works\\Oscillator_lab_report_performance_complete.docx",
+    "size_bytes": 5849349,
+    "last_write_local": "2026-10-02T18:59:41.5549198+02:00",
+    "sha256": "24006EAEF735EA6FFC349B51FEFF45B06A37AF8C8693F43C9D02CEDBE775C7B4",
+    "note": "Read in place; not copied. Narrative and embedded figures are supporting evidence, not an electrical netlist."
+  }
+}

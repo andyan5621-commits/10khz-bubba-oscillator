@@ -1,0 +1,177 @@
+[
+  {
+    "other_net": "/-15V",
+    "centerline_separation_mm": 1.060660171779821,
+    "parallel_overlap_mm": 7.42462120245875,
+    "VOUT_segment": [
+      [
+        75.75,
+        94.0
+      ],
+      [
+        88.75,
+        107.0
+      ]
+    ],
+    "other_segment": [
+      [
+        88.5,
+        105.25
+      ],
+      [
+        83.25,
+        100.0
+      ]
+    ]
+  },
+  {
+    "other_net": "/-15V",
+    "centerline_separation_mm": 1.9445436482630059,
+    "parallel_overlap_mm": 5.480077554195743,
+    "VOUT_segment": [
+      [
+        64.75,
+        77.75
+      ],
+      [
+        73.75,
+        86.75
+      ]
+    ],
+    "other_segment": [
+      [
+        63.0,
+        78.75
+      ],
+      [
+        67.25,
+        83.0
+      ]
+    ]
+  },
+  {
+    "other_net": "/+15V",
+    "centerline_separation_mm": 0.75,
+    "parallel_overlap_mm": 4.5,
+    "VOUT_segment": [
+      [
+        88.75,
+        107.0
+      ],
+      [
+        104.75,
+        107.0
+      ]
+    ],
+    "other_segment": [
+      [
+        88.0,
+        107.75
+      ],
+      [
+        93.25,
+        107.75
+      ]
+    ]
+  },
+  {
+    "other_net": "/-15V",
+    "centerline_separation_mm": 1.2374368670764584,
+    "parallel_overlap_mm": 4.242640687119286,
+    "VOUT_segment": [
+      [
+        64.75,
+        77.75
+      ],
+      [
+        73.75,
+        86.75
+      ]
+    ],
+    "other_segment": [
+      [
+        68.25,
+        83.0
+      ],
+      [
+        71.25,
+        86.0
+      ]
+    ]
+  },
+  {
+    "other_net": "Net-(R401-Pad2)",
+    "centerline_separation_mm": 1.5,
+    "parallel_overlap_mm": 2.5,
+    "VOUT_segment": [
+      [
+        88.75,
+        107.0
+      ],
+      [
+        104.75,
+        107.0
+      ]
+    ],
+    "other_segment": [
+      [
+        94.5,
+        105.5
+      ],
+      [
+        92.0,
+        105.5
+      ]
+    ]
+  },
+  {
+    "other_net": "Net-(R402-Pad2)",
+    "centerline_separation_mm": 1.5,
+    "parallel_overlap_mm": 2.5,
+    "VOUT_segment": [
+      [
+        88.75,
+        107.0
+      ],
+      [
+        104.75,
+        107.0
+      ]
+    ],
+    "other_segment": [
+      [
+        99.0,
+        105.5
+      ],
+      [
+        96.5,
+        105.5
+      ]
+    ]
+  },
+  {
+    "other_net": "Net-(R403-Pad2)",
+    "centerline_separation_mm": 1.5,
+    "parallel_overlap_mm": 2.5,
+    "VOUT_segment": [
+      [
+        88.75,
+        107.0
+      ],
+      [
+        104.75,
+        107.0
+      ]
+    ],
+    "other_segment": [
+      [
+        101.0,
+        105.5
+      ],
+      [
+        103.5,
+        105.5
+      ]
+    ]
+  }
+]

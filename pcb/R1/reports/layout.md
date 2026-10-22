@@ -1,0 +1,41 @@
+# Analog PCB layout report
+
+2026-10-22. **Completed routed native board, frozen for independent final review. Manufacturing release remains the chief's Gate C/D decision.**
+
+## Native board and evidence
+
+The canonical file is `../pcb/oscillator.kicad_pcb`. Frozen SHA256: `a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2`. It has 77 schematic components plus four authorized board-only mounting holes, 172 electrical pads, 51 nets, 591 track segments and 39 through vias. One filled B.Cu ground zone and four mounting keepouts account for its five zones. Thickness is 1.6 mm; the requested stackup is two layers with nominal 35 micrometres copper per side.
+
+Actual KiCad 9.0.6 DRC in `../pcb/final-drc.json` at 02:52:57 +02:00 reports **zero violations and zero unconnected items**, with no exclusions. Local project and rule files are supplied. Nonfatal Windows registry permission messages did not prevent checks or renders. DRC verifies tested geometry/connectivity; it does not establish measured oscillator performance. Independent review passed the routed candidate's 172 electrical pad assignments against the 77-component schematic, allowing only H1-H4 as board-only additions. Final same-folder project parity is a separate chief/independent check after incorporating the two silk-only footprint IDs below. The earlier placement DRC and route-search log are historical evidence, not final acceptance results.
+
+## Circuit, placement and return paths
+
+The recovered oscillator, limiter, four RC sections, unity-gain Sallen-Key filter, output buffer and fixed divider retain their exact captured connections and physical values. All 44 resistors remain, including the user's series networks. Four OPA1656 SOIC-8 packages provide seven active channels with the spare terminated as captured. The approved Alps RK09K1130A5R sits across VFINAL/GND, with its wiper feeding BNC without another buffer. No clockwise/increase claim is printed; rotation direction is an assembly check.
+
+The limiter and feedback components surround U1. The RC chain progresses toward U2 and the U3 isolation/filter stages; U4 and the output network sit near BNC. Each rail pin has its specified through-hole 100 nF bypass capacitor; both 10 microfarad capacitors are near the supply input. Signals and local bypass routes use 0.30 mm tracks; longer supply branches use 0.50 mm. Vias are 0.60 mm copper diameter with 0.30 mm drills. All resistors use 0805 hand-soldering footprints.
+
+The bottom common-ground fill is broadly continuous; short layer-change routes do not form a plane-wide split. Grounded SMD pins have explicit vias, including U1.3. Grounded through-hole pads connect into the plane. Thermal gaps/spokes are 0.30/0.35 mm, and islands are removed. There are no deliberately isolated analog grounds or sensitive-node ground-plane cutouts.
+
+Independent inspection measured seven rail-pin-to-bypass paths at 3.71-4.93 mm. U1.4 to C11.2 is 6.32 mm, exceeding the initial 5 mm aspiration; this is a documented tradeoff. All eight are local front-layer connections. N_INV branch copper totals 24.23 mm without added probe stubs. Filter junction routes total approximately 9.36 and 10.13 mm; RC1 is 32.33 mm with two vias; VOUT totals 83.77 mm across the distributed implementation after removal of a redundant 7.41 mm same-net loop. Further shortening of the R13 branch would cross the resistor chain and RC3-driven routes or require additional bottom-layer transitions; the existing routing retains the accepted ground-return structure. These lengths are not capacitance extraction. The separate bounded sensitivity study supports compact sensitive traces and continuous returns, but neither proves actual board capacitance nor justifies a plane void. No added testpoints touch limiter/filter high-impedance junctions. Eight 1.5 mm pads expose +15V,GND,-15V,GAIN_OUT,N_BUF,VFILTERED,VFINAL,OUTPUT exactly as captured.
+
+## Mechanical implementation
+
+The chief-approved outline is **95 x 79 mm**, X 50-145/Y 47-126 mm. Four 2.7 mm NPTH holes for M2.5 hardware are at (53.5,50.5),(141.5,50.5),(53.5,122.5),(141.5,122.5) mm. Each has a 3.05 mm radius copper/track/via keepout for screw/washer clearance. Mounting pitch is 88 x 72 mm. `../pcb/mechanical-outline.svg` shows board-relative dimensions. These are routine mounting provisions, not compatibility with an unspecified enclosure.
+
+J1 uses Molex 39543-0003's verified three 1.20 mm holes at 5 mm pitch. The 15 x 9.5 mm body is known, but the pin-row depth datum was not established reliably. Its conservative courtyard therefore reserves full possible body depth on both sides of the pin row plus margin: board X 52.75-69.25/Y 99-119 mm. Its F.Fab body is illustrative; the courtyard is the fit constraint. This reservation clears other bodies, edges and mounting hardware. Supply polarity is marked at the pins.
+
+J2 uses exact Amphenol 031-5431-10RFX REV C. With signal at local(0,0), shield is(-2.54,0) and fork posts are(-5.08,-5.08),(5.08,-5.08) mm. Small drills are 0.89 mm; fork drills 2.01 mm. Independent rear/top-view reconciliation established handedness. Fork posts are intentionally unnetted because the outline does not establish shell continuity; the known shield contact supplies return. The body-front datum is at the right board edge, with the mating section outside the outline. No enclosure/panel fit is asserted.
+
+The exact user-approved Alps RK09K1130A5R footprint matches manufacturer drawing 3: three contacts at 2.5 mm pitch/1.0 mm drills and documented board-lock slot centres. It is not an assumed equivalent of the TinyTronics alternate. Shaft access is above the upper-right board. Part-specific Vishay, AVX and KEMET footprints retain stock lead pitches/body envelopes. Mechanical source evidence is in `../verification/footprint-audit.md` and its drawings.
+
+## Fabrication geometry and silkscreen
+
+Rules enforce 0.25 mm general clearance/minimum track width, 0.50 mm copper-to-edge, 0.30 mm drill-to-drill, 0.30 mm PTH annular ring and 0.10 mm via annular ring. Actual minimum component-pad ring is 0.375 mm; via ring 0.15 mm. Oval pot slots are included. `../pcb/fabrication-geometry-audit.json` records all PTH results, 0.05 mm mask expansion, 0.10 mm mask web and **all 39 vias exposed on both sides**. NPTH keepouts exceed required copper clearance.
+
+Silk strokes are at least 0.15 mm and reference height at least 0.8 mm. The board identifies supplies, nominal function, revision R1 and high-impedance output. Its title-block revision is R1 and stackup finish is ENIG. Nominal thickness metadata totals 1.60 mm: 1.51 mm FR4, two 0.035 mm copper layers and two 0.01 mm masks. These nominal subdivisions and KiCad default FR4 dielectric properties are not fabricator-specific material measurements or parasitic extraction inputs. The R1 silk/metadata change preserves every pad, track and component position, as recorded in revision-mark-audit.json. C7 and U3 use local variants shortening one silk segment each beside exposed vias: `Oscillator:C_KEMET_C315_P2.54_RoutedSilk` and `Oscillator:SOIC-8_3.9x4.9mm_P1.27mm_RoutedSilk`. Pads, drills, nets, courtyard and MPNs are unchanged. `silk-variant-pad-parity.json` confirms their pad fields exactly match the Gate B baseline. Library mismatch checking remains enabled and passes. `footprint-manifest.csv` records all 77 electrical assignments.
+
+## Previews and remaining checks
+
+`board-front.svg`/`board-back.svg` are actual KiCad copper/silk/outline review exports; `board-top.png`/`board-3d.png` are native renders of the frozen board. Standard resistor, IC, diode and bulk-capacitor bodies are shown. C1-C14,J1,J2,RV1 have no body models in these renders, so images are not assembled-part fit evidence; drawing/courtyard review establishes their reservations.
+
+Placement/routing/finalization scripts and intermediate candidates remain for traceability. Running the placement generator overwrites the canonical board with an unrouted study; it is not a release-update command. Historical routing-log failed trials do not override the actual final zero-unconnected DRC. The chief owns final same-folder packaging, Gate C/D and manufacturing outputs; no Gerbers/drills were generated by the layout agent. Startup, spectrum, output loading and pot rotation remain physical bench checks after assembly.

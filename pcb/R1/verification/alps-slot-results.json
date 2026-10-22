@@ -1,0 +1,60 @@
+{
+  "verdict": "PASS",
+  "scope": "RV1 manufactured copper/hole geometry against AISLER ring and slot-tool rules; not terminal insertion proof",
+  "board_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "pads": [
+    {
+      "pad": "1",
+      "minimum_ring_mm": 0.4,
+      "minimum_required_ring_mm": 0.3
+    },
+    {
+      "pad": "2",
+      "minimum_ring_mm": 0.4,
+      "minimum_required_ring_mm": 0.3
+    },
+    {
+      "pad": "3",
+      "minimum_ring_mm": 0.4,
+      "minimum_required_ring_mm": 0.3
+    },
+    {
+      "pad": "MP",
+      "copper_mm": [
+        4.0,
+        3.0
+      ],
+      "drill_oval_mm": [
+        2.1,
+        1.8
+      ],
+      "copper_corner_radius_mm": 0.75,
+      "minimum_ring_mm": 0.6,
+      "minimum_required_ring_mm": 0.3,
+      "PTH_slot_tool_diameter_mm": 1.8,
+      "accepted_tool_range_mm": [
+        0.7,
+        2.6
+      ]
+    },
+    {
+      "pad": "MP",
+      "copper_mm": [
+        4.0,
+        3.0
+      ],
+      "drill_oval_mm": [
+        2.1,
+        1.8
+      ],
+      "copper_corner_radius_mm": 0.75,
+      "minimum_ring_mm": 0.6,
+      "minimum_required_ring_mm": 0.3,
+      "PTH_slot_tool_diameter_mm": 1.8,
+      "accepted_tool_range_mm": [
+        0.7,
+        2.6
+      ]
+    }
+  ]
+}

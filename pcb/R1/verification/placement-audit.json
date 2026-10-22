@@ -1,0 +1,10 @@
+{
+  "board": "oscillator-pcb\\pcb\\oscillator.kicad_pcb",
+  "sha256": "95636e4ce2b699056c9323bb41493cc7cf611f0c085417a88ae122ba412314ef",
+  "footprints": 20,
+  "net_definitions": 1,
+  "tracks": 0,
+  "vias": 0,
+  "zones": 0,
+  "verdict": "FAIL - placement skeleton only; no electrical circuit"
+}

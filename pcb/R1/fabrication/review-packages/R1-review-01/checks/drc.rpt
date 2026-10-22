@@ -1,0 +1,34 @@
+** Drc report for oscillator.kicad_pcb **
+** Created on 2026-10-22T02:49:20+0200 **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 8 Footprint errors **
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(75,0000 mm, 114,0000 mm): Footprint TP1
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(81,0000 mm, 114,0000 mm): Footprint TP2
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(87,0000 mm, 114,0000 mm): Footprint TP3
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(70,0000 mm, 87,0000 mm): Footprint TP4
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(101,0000 mm, 85,0000 mm): Footprint TP5
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(109,0000 mm, 94,2000 mm): Footprint TP6
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(122,0000 mm, 104,0000 mm): Footprint TP7
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
+    Local override; warning
+    @(127,0000 mm, 99,0000 mm): Footprint TP8
+
+** End of Report **

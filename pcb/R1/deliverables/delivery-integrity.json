@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files_hashed": 117,
+  "original_candidate_hashes_verified": 49,
+  "archive": "Oscillator-PCB-R1-Engineering-Review.zip",
+  "archive_sha256": "5a126d6aaf75e3921b026391746cdecc1dca4a55f2d65621c4da7da011937d4f",
+  "archive_bytes": 3788367,
+  "audited_board_schematic_gerber_and_report_match": true,
+  "user_release_authorized": false
+}

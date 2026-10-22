@@ -1,0 +1,146 @@
+{
+  "scope": "bounded assumed shunt-capacitance sensitivity; no extracted PCB parasitics",
+  "baseline": {
+    "source": "reports/runtime-check/hardware_full-analysis.json",
+    "metrics": {
+      "freq": 9984.351724269216,
+      "Vpp": 4.642418861621902,
+      "THD": 0.002890112751967933,
+      "SFDR": 90.7833444641762,
+      "SFDR_all_bins": 90.7833444641762,
+      "settled": true
+    }
+  },
+  "completed_cases": [
+    {
+      "name": "par_ninv_5pf",
+      "assumption": "5 pF from the inverting summing node to ground",
+      "pcb_nodes": [
+        "N_INV"
+      ],
+      "added_elements": [
+        "C_PAR_NINV N001 0 5p"
+      ],
+      "saved_end_s": 0.05,
+      "metrics": {
+        "freq": 9984.351772733087,
+        "Vpp": 4.642479513741344,
+        "THD": 0.0028903204116431267,
+        "SFDR": 90.78272248538069,
+        "SFDR_all_bins": 90.78272248538069,
+        "settled": true
+      },
+      "delta_vs_nominal": {
+        "frequency_hz": 4.84638712805463e-05,
+        "frequency_percent": 4.85398277128013e-07,
+        "vpp_v": 6.065211944239479e-05,
+        "vpp_percent": 0.0013064766719805831,
+        "sfdr_db": -0.0006219787955075162,
+        "thd_percentage_points": 2.076596751937089e-07
+      },
+      "full_analysis": "par_ninv_5pf-analysis.json"
+    },
+    {
+      "name": "par_limiter_1pf",
+      "assumption": "1 pF from each limiter threshold node to ground; symmetric bound",
+      "pcb_nodes": [
+        "LIM_P",
+        "LIM_N"
+      ],
+      "added_elements": [
+        "C_PAR_LIMP N002 0 1p",
+        "C_PAR_LIMN N005 0 1p"
+      ],
+      "saved_end_s": 0.05,
+      "metrics": {
+        "freq": 9984.53835792276,
+        "Vpp": 4.640480680182957,
+        "THD": 0.0028839974430989812,
+        "SFDR": 90.80172384406588,
+        "SFDR_all_bins": 90.80172384406588,
+        "settled": true
+      },
+      "delta_vs_nominal": {
+        "frequency_hz": 0.1866336535440496,
+        "frequency_percent": 0.0018692616075455248,
+        "vpp_v": -0.0019381814389447527,
+        "vpp_percent": -0.041749387479173006,
+        "sfdr_db": 0.01837937988968008,
+        "thd_percentage_points": -6.115308868951796e-06
+      },
+      "full_analysis": "par_limiter_1pf-analysis.json"
+    },
+    {
+      "name": "par_filter_5pf",
+      "assumption": "5 pF from each internal Sallen-Key node to ground",
+      "pcb_nodes": [
+        "F_J",
+        "F_IN"
+      ],
+      "added_elements": [
+        "C_PAR_FJ N011 0 5p",
+        "C_PAR_FIN N012 0 5p"
+      ],
+      "saved_end_s": 0.05,
+      "metrics": {
+        "freq": 9984.351722910298,
+        "Vpp": 4.619348417269039,
+        "THD": 0.002887925320819467,
+        "SFDR": 90.78990564801488,
+        "SFDR_all_bins": 90.78990564801488,
+        "settled": true
+      },
+      "delta_vs_nominal": {
+        "frequency_hz": -1.3589178706752136e-06,
+        "frequency_percent": -1.3610479410175458e-08,
+        "vpp_v": -0.02307044435286265,
+        "vpp_percent": -0.4969487898557001,
+        "sfdr_db": 0.006561183838684315,
+        "thd_percentage_points": -2.18743114846617e-06
+      },
+      "full_analysis": "par_filter_5pf-analysis.json"
+    },
+    {
+      "name": "par_rc_nodes_5pf",
+      "assumption": "5 pF from each of the four oscillator RC nodes to ground",
+      "pcb_nodes": [
+        "RC1",
+        "RC2",
+        "RC3",
+        "VOUT"
+      ],
+      "added_elements": [
+        "C_PAR_RC1 kick 0 5p",
+        "C_PAR_RC2 N006 0 5p",
+        "C_PAR_RC3 N007 0 5p",
+        "C_PAR_RC4 Vout 0 5p"
+      ],
+      "saved_end_s": 0.05,
+      "metrics": {
+        "freq": 9979.388117645653,
+        "Vpp": 4.642149803995256,
+        "THD": 0.002893220697724992,
+        "SFDR": 90.77401386784949,
+        "SFDR_all_bins": 90.77401386784949,
+        "settled": true
+      },
+      "delta_vs_nominal": {
+        "frequency_hz": -4.963606623563464,
+        "frequency_percent": -0.04971385985429455,
+        "vpp_v": -0.0002690576266459743,
+        "vpp_percent": -0.0057956344454490605,
+        "sfdr_db": -0.009330596326705631,
+        "thd_percentage_points": 3.107945757059062e-06
+      },
+      "full_analysis": "par_rc_nodes_5pf-analysis.json"
+    }
+  ],
+  "incomplete_cases": [
+    {
+      "name": "par_limiter_5pf",
+      "assumption": "5 pF from each limiter threshold node to ground; symmetric bound",
+      "status": "LTspice exceeded the 300 s guard; partial waveform rejected",
+      "interpretation": "numerical/runtime limitation, not evidence of circuit or hardware instability"
+    }
+  ]
+}

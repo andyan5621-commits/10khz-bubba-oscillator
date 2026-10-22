@@ -1,0 +1,19 @@
+{
+  "package": "R1-review-03",
+  "gate_A": "PASS",
+  "gate_B": "PASS",
+  "gate_C": "PASS",
+  "gate_D_engineering_package": "PASS",
+  "overall_prototype_readiness": "CONDITIONAL PASS",
+  "critical_unresolved_electrical_or_manufacturing_issues": [],
+  "release_authorized": false,
+  "conditions": [
+    "Explicit user manufacturing/purchase release",
+    "Ordinary incoming inspection including pot insertion/retention and knob direction",
+    "Controlled assembly/startup and measured hardware performance validation"
+  ],
+  "native_board_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "native_schematic_sha256": "cc4e9bd008f168a4e64262c612c48e86a04cea780c80a114a0fdfe0a20036169",
+  "gerber_zip_sha256": "b7150ff62d955080c8e8bda7e1d0696d12e3df7a49b8af16baf8273b0053b478",
+  "independent_review_sha256": "4722654b08af9abc05ab4a39f89e65a910ab824620071c5b32deef7b31712b0a"
+}

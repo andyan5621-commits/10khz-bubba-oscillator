@@ -1,0 +1,10 @@
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-F_Cu.gtl'.
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-B_Cu.gbl'.
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-F_Silkscreen.gto'.
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-B_Silkscreen.gbo'.
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-F_Mask.gts'.
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-B_Mask.gbs'.
+Plotted to 'C:\Users\20252928\OneDrive - TU Eindhoven\Documents\ChatGPT\Oscillator PCB development\oscillator-pcb\fabrication\review-packages\R1-review-03\gerbers\oscillator-Edge_Cuts.gm1'.
+
+02:53:30: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+02:53:30: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 2: The system cannot find the file specified.)

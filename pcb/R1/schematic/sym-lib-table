@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Oscillator")(type "KiCad")(uri "${KIPRJMOD}/Oscillator.kicad_sym")(options "")(descr "Embedded schematic support library"))
+  (lib (name "Amplifier_Operational")(type "KiCad")(uri "C:/Program Files/KiCad/9.0/share/kicad/symbols/Amplifier_Operational.kicad_sym")(options "")(descr ""))
+  (lib (name "Connector_Generic")(type "KiCad")(uri "C:/Program Files/KiCad/9.0/share/kicad/symbols/Connector_Generic.kicad_sym")(options "")(descr ""))
+  (lib (name "Device")(type "KiCad")(uri "C:/Program Files/KiCad/9.0/share/kicad/symbols/Device.kicad_sym")(options "")(descr ""))
+  (lib (name "power")(type "KiCad")(uri "C:/Program Files/KiCad/9.0/share/kicad/symbols/power.kicad_sym")(options "")(descr ""))
+)

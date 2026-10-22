@@ -1,0 +1,249 @@
+{
+  "board_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "mask_expansion_mm": 0.05,
+  "mask_min_web_mm": 0.1,
+  "all_vias_exposed": true,
+  "via_count": 39,
+  "pth_annular_rings_mm": [
+    {
+      "ref": "C11",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C11",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C16",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C16",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C12",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C12",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C7",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C7",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C3",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C3",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C6",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C6",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "D2",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "D2",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C14",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C14",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "J2",
+      "pad": "1",
+      "min_annular_mm": 0.43
+    },
+    {
+      "ref": "J2",
+      "pad": "2",
+      "min_annular_mm": 0.43
+    },
+    {
+      "ref": "J2",
+      "pad": "MP1",
+      "min_annular_mm": 0.645
+    },
+    {
+      "ref": "J2",
+      "pad": "MP2",
+      "min_annular_mm": 0.645
+    },
+    {
+      "ref": "C1",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C1",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C13",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C13",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "J1",
+      "pad": "1",
+      "min_annular_mm": 0.5
+    },
+    {
+      "ref": "J1",
+      "pad": "2",
+      "min_annular_mm": 0.5
+    },
+    {
+      "ref": "J1",
+      "pad": "3",
+      "min_annular_mm": 0.5
+    },
+    {
+      "ref": "D1",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "D1",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C4",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C4",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C10",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C10",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C9",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C9",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C8",
+      "pad": "1",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C8",
+      "pad": "2",
+      "min_annular_mm": 0.375
+    },
+    {
+      "ref": "C2",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C2",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C5",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C5",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C15",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "C15",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "RV1",
+      "pad": "1",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "RV1",
+      "pad": "2",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "RV1",
+      "pad": "3",
+      "min_annular_mm": 0.4
+    },
+    {
+      "ref": "RV1",
+      "pad": "MP",
+      "min_annular_mm": 0.6
+    },
+    {
+      "ref": "RV1",
+      "pad": "MP",
+      "min_annular_mm": 0.6
+    }
+  ]
+}

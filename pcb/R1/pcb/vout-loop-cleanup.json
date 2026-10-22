@@ -1,0 +1,7 @@
+{
+  "reason": "Chief-approved removal of four redundant VOUT track segments without intervening pads",
+  "board_sha256": "83c42e0e6dd5e9724a504b3fcdf5f9cd6286b4cc8741df543c93aea8980987d1",
+  "segments": 591,
+  "vout_total_mm": 83.77165782176328,
+  "removed_length_mm": 7.406854249
+}

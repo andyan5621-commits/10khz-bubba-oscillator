@@ -1,0 +1,250 @@
+{
+  "scope": "electrical capture; NOT fabrication/performance release",
+  "netlist": "oscillator-pcb\\verification\\independent-77part-export.net",
+  "sha256": "db4309e90db8f39b5bcc9b7374eec0ae2105f04ac0c81896c65c51fab455c881",
+  "component_count": 77,
+  "fixed_resistor_count": 44,
+  "net_count": 51,
+  "verdict": "PASS",
+  "failures": [],
+  "resistor_chains": [
+    {
+      "ends": [
+        "+15V",
+        "LIMIT_HI"
+      ],
+      "values_ohm": [
+        100.0,
+        200.0,
+        4700.0,
+        20000.0,
+        300000.0
+      ],
+      "references": [
+        "R601",
+        "R602",
+        "R603",
+        "R604",
+        "R605"
+      ]
+    },
+    {
+      "ends": [
+        "-15V",
+        "LIMIT_LO"
+      ],
+      "values_ohm": [
+        100.0,
+        200.0,
+        4700.0,
+        20000.0,
+        300000.0
+      ],
+      "references": [
+        "R805",
+        "R804",
+        "R803",
+        "R802",
+        "R801"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "N_INV"
+      ],
+      "values_ohm": [
+        1000.0,
+        47000.0
+      ],
+      "references": [
+        "R15",
+        "R14"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "KICK"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R101",
+        "R102",
+        "R103",
+        "R104"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "LIMIT_HI"
+      ],
+      "values_ohm": [
+        10000.0,
+        20000.0,
+        100000.0
+      ],
+      "references": [
+        "R503",
+        "R502",
+        "R501"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "LIMIT_LO"
+      ],
+      "values_ohm": [
+        10000.0,
+        20000.0,
+        100000.0
+      ],
+      "references": [
+        "R701",
+        "R702",
+        "R703"
+      ]
+    },
+    {
+      "ends": [
+        "GND",
+        "VFINAL"
+      ],
+      "values_ohm": [
+        1000.0
+      ],
+      "references": [
+        "R12"
+      ]
+    },
+    {
+      "ends": [
+        "N_BUF",
+        "N_FILT_SUM"
+      ],
+      "values_ohm": [
+        220.0,
+        680.0,
+        1000.0
+      ],
+      "references": [
+        "R901",
+        "R902",
+        "R903"
+      ]
+    },
+    {
+      "ends": [
+        "N_FILT_IN",
+        "N_FILT_SUM"
+      ],
+      "values_ohm": [
+        220.0,
+        680.0,
+        1000.0
+      ],
+      "references": [
+        "R1003",
+        "R1002",
+        "R1001"
+      ]
+    },
+    {
+      "ends": [
+        "N_INV",
+        "VOUT"
+      ],
+      "values_ohm": [
+        10000.0
+      ],
+      "references": [
+        "R13"
+      ]
+    },
+    {
+      "ends": [
+        "N_OUTBUF",
+        "VFINAL"
+      ],
+      "values_ohm": [
+        2000.0
+      ],
+      "references": [
+        "R11"
+      ]
+    },
+    {
+      "ends": [
+        "N_OUTBUF",
+        "VFINAL"
+      ],
+      "values_ohm": [
+        100000.0
+      ],
+      "references": [
+        "R16"
+      ]
+    },
+    {
+      "ends": [
+        "N_STAGE1",
+        "N_STAGE2"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R201",
+        "R202",
+        "R203",
+        "R204"
+      ]
+    },
+    {
+      "ends": [
+        "N_STAGE3",
+        "N_STAGE4"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R301",
+        "R302",
+        "R303",
+        "R304"
+      ]
+    },
+    {
+      "ends": [
+        "N_STAGE5",
+        "VOUT"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R401",
+        "R402",
+        "R403",
+        "R404"
+      ]
+    }
+  ]
+}

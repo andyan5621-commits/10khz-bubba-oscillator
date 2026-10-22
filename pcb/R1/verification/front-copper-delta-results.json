@@ -1,0 +1,64 @@
+{
+  "scope": "Native SVG red front-copper geometry comparison against pre-loop-cleanup rendering",
+  "removed_primitive_count": 4,
+  "added_primitive_count": 0,
+  "removed": [
+    [
+      "{http://www.w3.org/2000/svg}path",
+      {
+        "d": "M49.0250 58.1407 L52.0250 61.1407 "
+      },
+      {
+        "fill": "none",
+        "stroke": "#C83434",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-opacity": "1",
+        "stroke-width": "0.3000"
+      }
+    ],
+    [
+      "{http://www.w3.org/2000/svg}path",
+      {
+        "d": "M53.0250 61.1407 L54.0250 62.1407 "
+      },
+      {
+        "fill": "none",
+        "stroke": "#C83434",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-opacity": "1",
+        "stroke-width": "0.3000"
+      }
+    ],
+    [
+      "{http://www.w3.org/2000/svg}path",
+      {
+        "d": "M52.0250 61.1407 L53.0250 61.1407 "
+      },
+      {
+        "fill": "none",
+        "stroke": "#C83434",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-opacity": "1",
+        "stroke-width": "0.3000"
+      }
+    ],
+    [
+      "{http://www.w3.org/2000/svg}path",
+      {
+        "d": "M54.0250 62.1407 L54.7750 62.1407 "
+      },
+      {
+        "fill": "none",
+        "stroke": "#C83434",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "stroke-opacity": "1",
+        "stroke-width": "0.3000"
+      }
+    ]
+  ],
+  "added": []
+}

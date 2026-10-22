@@ -1,0 +1,261 @@
+{
+  "scope": "electrical capture; NOT fabrication/performance release",
+  "netlist": "oscillator-pcb\\verification\\rejected-initial-native-export.net",
+  "sha256": "37327a2b60a54b77a3fcaa39cb03fcfd5bb0d37bc62ea01e06dc0f5dba6c9af9",
+  "component_count": 53,
+  "fixed_resistor_count": 28,
+  "net_count": 35,
+  "verdict": "FAIL",
+  "failures": [
+    "Physical component count 53, expected69",
+    "Fixed resistor count 28, expected44",
+    "U1.2: expected N_INV; found GND",
+    "U1.3: expected GND; found N_INV",
+    "U1.5: expected KICK; found N_STAGE1",
+    "U1.6: expected N_STAGE1; found KICK",
+    "U1.4: expected -15V; found +15V",
+    "U1.8: expected +15V; found -15V",
+    "U2.2: expected N_STAGE3; found N_STAGE2",
+    "U2.3: expected N_STAGE2; found N_STAGE3",
+    "U2.5: expected N_STAGE4; found N_STAGE5",
+    "U2.6: expected N_STAGE5; found N_STAGE4",
+    "U2.4: expected -15V; found +15V",
+    "U2.8: expected +15V; found -15V",
+    "U3.2: expected N_BUF; found VOUT",
+    "U3.3: expected VOUT; found N_BUF",
+    "U3.5: expected N_FILT_IN; found VFILTERED",
+    "U3.6: expected VFILTERED; found N_FILT_IN",
+    "U3.4: expected -15V; found +15V",
+    "U3.8: expected +15V; found -15V",
+    "U4.2: expected N_OUTBUF; found VFILTERED",
+    "U4.3: expected VFILTERED; found N_OUTBUF",
+    "U4.5: expected GND; found SPARE_FB",
+    "U4.6: expected SPARE_FB; found GND",
+    "U4.4: expected -15V; found +15V",
+    "U4.8: expected +15V; found -15V",
+    "C15.1: expected +15V; found GND",
+    "C15.2: expected GND; found +15V",
+    "C16.1: expected GND; found -15V",
+    "C16.2: expected -15V; found GND",
+    "J1.1: expected +15V; found -15V",
+    "J1.3: expected -15V; found +15V",
+    "J2.1: expected OUTPUT; found GND",
+    "J2.2: expected GND; found OUTPUT",
+    "RV1.1: expected VFINAL; found GND",
+    "RV1.3: expected GND; found VFINAL",
+    "R5: expected [100000, 20000, 10000] between LIMIT_HI and GAIN_OUT; found [([130000.0], ['R5'])]",
+    "R6: expected [300000, 20000, 4700, 200, 100] between +15V and LIMIT_HI; found [([325000.0], ['R6'])]",
+    "R7: expected [100000, 20000, 10000] between GAIN_OUT and LIMIT_LO; found [([130000.0], ['R7'])]",
+    "R8: expected [300000, 20000, 4700, 200, 100] between LIMIT_LO and -15V; found [([325000.0], ['R8'])]",
+    "R9: expected [1000, 680, 220] between N_BUF and N_FILT_SUM; found [([1900.0], ['R9'])]",
+    "R10: expected [1000, 680, 220] between N_FILT_SUM and N_FILT_IN; found [([1900.0], ['R10'])]"
+  ],
+  "resistor_chains": [
+    {
+      "ends": [
+        "+15V",
+        "LIMIT_HI"
+      ],
+      "values_ohm": [
+        325000.0
+      ],
+      "references": [
+        "R6"
+      ]
+    },
+    {
+      "ends": [
+        "-15V",
+        "LIMIT_LO"
+      ],
+      "values_ohm": [
+        325000.0
+      ],
+      "references": [
+        "R8"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "LIMIT_HI"
+      ],
+      "values_ohm": [
+        130000.0
+      ],
+      "references": [
+        "R5"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "LIMIT_LO"
+      ],
+      "values_ohm": [
+        130000.0
+      ],
+      "references": [
+        "R7"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "N_INV"
+      ],
+      "values_ohm": [
+        1000.0,
+        47000.0
+      ],
+      "references": [
+        "R14",
+        "R15"
+      ]
+    },
+    {
+      "ends": [
+        "GAIN_OUT",
+        "KICK"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R101",
+        "R102",
+        "R103",
+        "R104"
+      ]
+    },
+    {
+      "ends": [
+        "GND",
+        "VFINAL"
+      ],
+      "values_ohm": [
+        1000.0
+      ],
+      "references": [
+        "R12"
+      ]
+    },
+    {
+      "ends": [
+        "N_BUF",
+        "N_FILT_SUM"
+      ],
+      "values_ohm": [
+        1900.0
+      ],
+      "references": [
+        "R9"
+      ]
+    },
+    {
+      "ends": [
+        "N_FILT_IN",
+        "N_FILT_SUM"
+      ],
+      "values_ohm": [
+        1900.0
+      ],
+      "references": [
+        "R10"
+      ]
+    },
+    {
+      "ends": [
+        "N_INV",
+        "VOUT"
+      ],
+      "values_ohm": [
+        10000.0
+      ],
+      "references": [
+        "R13"
+      ]
+    },
+    {
+      "ends": [
+        "N_OUTBUF",
+        "VFINAL"
+      ],
+      "values_ohm": [
+        2000.0
+      ],
+      "references": [
+        "R11"
+      ]
+    },
+    {
+      "ends": [
+        "N_OUTBUF",
+        "VFINAL"
+      ],
+      "values_ohm": [
+        100000.0
+      ],
+      "references": [
+        "R16"
+      ]
+    },
+    {
+      "ends": [
+        "N_STAGE1",
+        "N_STAGE2"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R201",
+        "R202",
+        "R203",
+        "R204"
+      ]
+    },
+    {
+      "ends": [
+        "N_STAGE3",
+        "N_STAGE4"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R301",
+        "R302",
+        "R303",
+        "R304"
+      ]
+    },
+    {
+      "ends": [
+        "N_STAGE5",
+        "VOUT"
+      ],
+      "values_ohm": [
+        47.0,
+        270.0,
+        330.0,
+        1000.0
+      ],
+      "references": [
+        "R401",
+        "R402",
+        "R403",
+        "R404"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "verdict": "PASS",
+  "package": "oscillator-pcb\\fabrication\\review-packages\\R1-review-02",
+  "manifest_entries_verified": 48,
+  "gerber_zip_entries": 10,
+  "zip_sha256": "1cd5514dfd7e4d3087d7001efbafc943a0e471b2084e93759be03b2b57ec4ada",
+  "failures": []
+}

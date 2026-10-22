@@ -1,0 +1,31 @@
+{
+  "verdict": "PASS",
+  "scope": "J1 conservative courtyard bounds; neighbor collision checked by independent KiCad DRC",
+  "board_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "courtyard_local_xyxy_mm": [
+    -3.25,
+    -10.0,
+    13.25,
+    10.0
+  ],
+  "courtyard_board_xyxy_mm": [
+    52.75,
+    99.0,
+    69.25,
+    119.0
+  ],
+  "rectangular_board_bounds_xyxy_mm": [
+    50.0,
+    47.0,
+    145.0,
+    126.0
+  ],
+  "board_edge_margins_left_top_right_bottom_mm": [
+    2.75,
+    52.0,
+    75.75,
+    7.0
+  ],
+  "body_datum_status": "Centered Fab outline illustrative only; independent pin-row depth datum remains unverified",
+  "envelope_basis": "9.5 mm full nominal body depth allowed on either side of row, plus 0.5 mm; nominal width extended 0.75 mm at each end"
+}

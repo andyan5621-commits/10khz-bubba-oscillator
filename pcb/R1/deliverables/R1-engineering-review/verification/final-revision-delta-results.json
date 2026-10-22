@@ -1,0 +1,9 @@
+{
+  "footprint": true,
+  "segment": true,
+  "via": true,
+  "zone": true,
+  "gr_line": true,
+  "verdict": "PASS",
+  "scope": "Exact semantic comparison of component geometry, copper, filled zones and outline between -02 and -03; revision text/stack metadata are outside this comparison"
+}

@@ -3,9 +3,9 @@
 An analog oscillator project by **Andi An**: analytical design, LTspice simulation,
 Python-assisted component optimization, breadboard construction, and measurement.
 
-**Current status:** breadboard built and measured. PCB design, fabrication, and
-PCB validation are planned; the files in `pcb/` are a starting structure, not a
-completed board design.
+**Current status:** breadboard built and measured; R1 PCB engineering review completed on 22 October 2026. Native KiCad design, fabrication outputs, BOM, assembly instructions and independent verification are available in [`pcb/R1/`](pcb/R1/). ERC/DRC and schematic/PCB parity passed with zero issues. User fabrication release, ordering, assembly and measured PCB validation remain pending.
+
+[Download the complete R1 engineering package](pcb/R1/deliverables/Oscillator-PCB-R1-Engineering-Review.zip) · [Independent review](pcb/R1/verification/independent-review.md) · [PCB overview](pcb/README.md)
 
 ![Completed breadboard with module labels](docs/images/breadboard-annotated.png)
 
@@ -48,7 +48,7 @@ frequency requirement. See [measurement details](docs/measurements.md) and
 | [`results/`](results/) | Saved optimization and tolerance records |
 | [`evidence/`](evidence/) | 10-second demonstration and captured analyzer readouts |
 | [`docs/`](docs/) | Design notes, component values, figures, and archived Word report |
-| [`pcb/`](pcb/) | Planned schematic/layout, fabrication, assembly, and validation directories |
+| [`pcb/`](pcb/) | Reviewed R1 KiCad design, fabrication data, BOM, assembly procedure and independent verification |
 
 ## Run the simulation tools
 
@@ -96,9 +96,9 @@ differences between the schematic and sweep netlist, read
 
 ## PCB next steps
 
-The PCB revision will preserve the breadboard as a measured reference. Start in
-[`pcb/README.md`](pcb/README.md), then add the chosen EDA project, board revisions,
-manufacturing outputs, assembly records, and fresh measurement evidence.
+The reviewed R1 preserves the recovered circuit and physical resistor networks, adds the confirmed output pot, and uses the reserved parts. Start in [`pcb/README.md`](pcb/README.md) for the exact reviewed revision. Next steps are user release, a dated supplier quote, purchase approval, assembly and matched-condition hardware measurements. The new PCB has not been fabricated or tested.
+
+The fresh model including the confirmed 10 kΩ pot predicts approximately 4.64 Vpp at maximum. Historical spectrum cursor separation alone does not establish calibrated full-band intrinsic SFDR; see the [R1 engineering summary](pcb/R1/reports/final-engineering-summary.md) and [measurement procedure](pcb/R1/assembly/assembly-and-test.md).
 
 Third-party model notices are retained in their files. See
 [third-party notices](THIRD_PARTY_NOTICES.md). No open-source license has been

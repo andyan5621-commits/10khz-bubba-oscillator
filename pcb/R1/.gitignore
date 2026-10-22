@@ -1,0 +1,14 @@
+# Large generated simulator waveforms stay locally available for reproducibility.
+*.raw
+*.op.raw
+__pycache__/
+*.pyc
+# Machine-local KiCad session state and lock files.
+*.kicad_prl
+*.lck
+~*.lck
+*-backups/
+# Reproducible local Gerber parser installation; version pinned in requirements.
+fabrication/inspection/vendor/
+# LTspice transient cache; decks, accepted results and reports are retained.
+reports/runtime-check/*.db

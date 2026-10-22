@@ -1,0 +1,10 @@
+{
+  "canonical_board_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "schematic_sha256": "cc4e9bd008f168a4e64262c612c48e86a04cea780c80a114a0fdfe0a20036169",
+  "plotting_only_fab_reference_labels_removed": 66,
+  "cad_geometry_modified": false,
+  "pdfs": {
+    "placement-R1.pdf": "79aa9a1f7236854f11a1cfc752a209bbc5ad10861a65a0fc221cc4806407ed40",
+    "schematic-R1.pdf": "0e475564aabc0f26dc08e41401e1160c17d0bfe1b3bbf5da85d4cbdaca6fdcf1"
+  }
+}

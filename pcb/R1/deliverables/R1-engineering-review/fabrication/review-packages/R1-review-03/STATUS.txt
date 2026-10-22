@@ -1,0 +1,3 @@
+UNRELEASED REVIEW CANDIDATE
+Requires independent export inspection and explicit user release/purchase approval.
+Open source/oscillator.kicad_pro in KiCad 9. Libraries use normal KiCad 9 environment variables.

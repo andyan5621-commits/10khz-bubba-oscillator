@@ -1,0 +1,30 @@
+{
+  "verdict": "PASS",
+  "scope": "Pads stay outside 3.05 mm hardware radius using conservative circumscribed pad circles; DRC verifies track/via/pour keepouts",
+  "holes": [
+    {
+      "mount": "H3",
+      "minimum_conservative_distance_to_any_pad_copper_mm": 12.173895299135577,
+      "nearest_pad": "J1.1",
+      "required_hardware_radius_mm": 3.05
+    },
+    {
+      "mount": "H2",
+      "minimum_conservative_distance_to_any_pad_copper_mm": 11.284411485442533,
+      "nearest_pad": "RV1.MP",
+      "required_hardware_radius_mm": 3.05
+    },
+    {
+      "mount": "H1",
+      "minimum_conservative_distance_to_any_pad_copper_mm": 5.262703992697202,
+      "nearest_pad": "R603.2",
+      "required_hardware_radius_mm": 3.05
+    },
+    {
+      "mount": "H4",
+      "minimum_conservative_distance_to_any_pad_copper_mm": 16.597825973004067,
+      "nearest_pad": "J2.MP2",
+      "required_hardware_radius_mm": 3.05
+    }
+  ]
+}
