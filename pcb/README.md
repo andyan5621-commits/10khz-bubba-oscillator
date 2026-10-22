@@ -9,6 +9,7 @@
 - [Independent verification](R1/verification/independent-review.md)
 - [BOM and quantities still to purchase](R1/bom/draft_bom.csv)
 - [Assembly and measurement procedure](R1/assembly/assembly-and-test.md)
+- [Current manufacturer prices, delivery estimate and remaining shopping list](R1/fabrication/purchase-plan-2026-10-22.md)
 - [Ordering specifications](R1/fabrication/ordering-guidance.md)
 
 ![R1 PCB top view](R1/pcb/board-top.png)

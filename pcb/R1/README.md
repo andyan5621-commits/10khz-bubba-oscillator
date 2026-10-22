@@ -21,3 +21,7 @@ The board is 95 × 79 mm, two layers, nominal 1.6 mm FR-4 / 35 µm copper / ENIG
 The `source` folder in the final candidate keeps the project, schematic, board, rules and custom libraries together for KiCad 9. Working directories remain under schematic/ and pcb/; the candidate is an immutable reviewed snapshot. Do not edit the snapshot and then reuse its checks or hashes.
 
 No new PCB has been physically tested. Simulated SFDR is not measured hardware performance. The intended October 31 assembly date depends on the live manufacturing/shipping quote and parts receipt; it is not guaranteed. Both final fabrication release and any purchase require explicit user approval.
+
+## Current procurement update
+
+[22 October supplier pricing, actual ENIG lead times, and remaining purchases](fabrication/purchase-plan-2026-10-22.md). This later update supersedes earlier generic one-day manufacturing advertising. It does not modify the immutable reviewed source or ZIPs.
