@@ -39,3 +39,6 @@ fp-info-cache
 # Large unedited recordings; curated MP4 demo is tracked
 *.mov
 *.MOV
+
+# Local assembly-map render checks; public PDF and source images are retained
+/pcb/R1/assembly/drawings/clear-map/pdf-render-*.png

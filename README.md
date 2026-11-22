@@ -1,105 +1,66 @@
-# 10 kHz Bubba sine-wave oscillator
+# 10 kHz Bubba sine wave oscillator
 
-An analog oscillator project by **Andi An**: analytical design, LTspice simulation,
-Python-assisted component optimization, breadboard construction, and measurement.
+A personal analog electronics project by **Andi An**, from analytical design and LTspice optimization to a working breadboard and an assembled R1 PCB.
 
-**Current status:** breadboard built and measured; R1 PCB engineering review completed on 22 October 2026. Native KiCad design, fabrication outputs, BOM, assembly instructions and independent verification are available in [`pcb/R1/`](pcb/R1/). ERC/DRC and schematic/PCB parity passed with zero issues. User fabrication release, ordering, assembly and measured PCB validation remain pending.
+**Final implementation documented 22 November 2026.** The R1 board has been manufactured, assembled and bench tested. Reported output is approximately **10.006 kHz**, adjustable from near zero to approximately **4.6 Vpp** into a high-impedance load, using external **±15 V** rails.
 
-[Download the complete R1 engineering package](pcb/R1/deliverables/Oscillator-PCB-R1-Engineering-Review.zip) · [Independent review](pcb/R1/verification/independent-review.md) · [PCB overview](pcb/README.md)
+## Start here
 
-![Completed breadboard with module labels](docs/images/breadboard-annotated.png)
+- **[Final project report](docs/report/final-project-report.md)** — design, simulations, PCB engineering, assembly, measurements and limitations.
+- [Hardware measurement record](pcb/R1/reports/hardware-measurement-log.md) and [machine-readable results](results/hardware/README.md).
+- [Original PCB spectra and photographs](evidence/hardware/2026-11-20/README.md).
+- [PCB source and manufacturing package](pcb/README.md).
+- [Detailed soldering guide](pcb/R1/assembly/R1-detailed-soldering-guide.md) and [clear component map](pcb/R1/assembly/drawings/clear-map/R1-clear-component-map.pdf).
 
-## Design
+![Assembled oscillator PCB](evidence/hardware/2026-11-20/assembled-top.jpeg)
 
-A four-stage Bubba oscillator with diode amplitude limiting feeds an isolation
-buffer, a resonant second-order Sallen–Key low-pass filter, an output buffer, and
-an adjustable divider. The filter targets the dominant third harmonic. Seven
-OPA1656 amplifier channels operate from an external ±15 V supply. A 10 kΩ
-potentiometer provides output adjustment in the physical prototype.
+## Results and their scope
 
-![Functional architecture](docs/images/architecture-block-diagram.png)
+| Evaluation | Frequency | Output | Spectral evidence |
+|---|---:|---:|---|
+| Saved discrete LTspice winner | 9,984.352 Hz | 4.949660 Vpp | 90.783 dB modeled SFDR; variant without hardware pot loading |
+| PCB pot-loaded simulation | approximately 9,984.35 Hz | 4.6424 Vpp | approximately 90.78 dB modeled SFDR |
+| Breadboard at matching output | 10,052.85 Hz | approximately 4.40 Vpp | 91.08 dB recorded cursor separation |
+| PCB three repeated captures | 10,006.08–10,006.29 Hz | calculated 4.40 Vpp | 89.70–90.67 dB selected-component cursor separation |
 
-## Recorded results
+The PCB is closer to nominal frequency in this comparison. **Calibrated intrinsic SFDR ≥75 or ≥80 dBc has not been established.** The approximately 90 dB readings compare selected components; largest-spur selection and measurement-system residual remain unqualified. No spectral improvement over the breadboard is claimed. Timed drift and startup tests were not completed. Read the report before interpreting these figures as specifications.
 
-| Evaluation | Frequency | Output | Spectral result |
-|---|---:|---:|---:|
-| Final discrete LTspice optimization | 9,984.352 Hz | 4.949660 Vpp | 90.783 dB SFDR |
-| Breadboard, near full output | 10,052.83 Hz | approximately 4.98 Vpp | estimated 88.79 dBc SFDR, 0–100 kHz |
-| Oscilloscope waveform captures | approximately 10 kHz | 5.07, 3.82, and 0.800 Vpp | Sine-wave shape and amplitude adjustment |
+## Circuit
 
-The near-full-output measurement exceeds the 75 dB design target by 13.79 dB.
-The recorded frequency is within the 10 kHz ±1% requirement. Simulated SFDR rose
-from 58.252 dB for the optimized unfiltered core to 88.47 dB after filtering;
-device-model substitution and discrete optimization subsequently gave 90.783 dB.
+Four buffered RC sections and a diode-limited gain stage form the Bubba oscillator. An isolation buffer feeds a resonant unity-gain Sallen–Key low-pass filter, followed by an output buffer, fixed divider and 10 kΩ linear output pot. Four OPA1656 duals provide seven signal-path channels and one grounded spare follower. The wiper output requires a high-impedance load; do not use a 50 Ω termination as an equivalent test condition.
 
-These are **breadboard and simulation results**, not PCB performance claims.
-The simulation and measurement use different bandwidths, windowing, and output
-loads. Low-amplitude analyzer readouts are affected by averaging and the noise
-floor. The tolerance study found 46 of 256 timing-component corners outside the
-frequency requirement. See [measurement details](docs/measurements.md) and
-[recorded simulation results](results/README.md).
+The R1 board preserves the optimized component values. It is **95 × 79 mm**, two-layer FR-4, nominal 1.6 mm / 35 µm copper / ENIG. Archived ERC, DRC, unconnected and schematic-parity counts are zero. Independent design and fabrication review passed. These checks do not certify every physical solder joint or measured performance.
 
 ## Repository map
 
-| Directory | Contents |
+| Location | Contents |
 |---|---|
-| [`simulation/ltspice/`](simulation/ltspice/) | Final schematic, sweep starting schematic, winning netlist, symbols and device models |
-| [`simulation/scripts/`](simulation/scripts/) | Nominal measurement, discrete sweep, coherent analysis, and tolerance scripts |
-| [`results/`](results/) | Saved optimization and tolerance records |
-| [`evidence/`](evidence/) | 10-second demonstration and captured analyzer readouts |
-| [`docs/`](docs/) | Design notes, component values, figures, and archived Word report |
-| [`pcb/`](pcb/) | Reviewed R1 KiCad design, fabrication data, BOM, assembly procedure and independent verification |
+| [Final report](docs/report/final-project-report.md) | Canonical end-project documentation |
+| [Design notes](docs/design.md) | Effective values and development history |
+| [Measurement overview](docs/measurements.md) | Breadboard and PCB evidence and limitations |
+| [Simulation](docs/simulation.md) | Reproduction instructions, variants and models |
+| [Results](results/README.md) | Saved simulation results and hardware CSV transcriptions |
+| [Evidence](evidence/README.md) | Demonstration video, spectra and assembled-board photos |
+| [PCB](pcb/README.md) | KiCad sources, BOM, released Gerbers, assembly and review |
+| [Documentation index](docs/README.md) | Current documents versus historical records |
+| [Change history](CHANGELOG.md) | Documentation milestones |
 
-## Run the simulation tools
+## Reproduce the simulations
 
-The simulation launchers were developed for **Windows with LTspice installed**.
-Their process-control code uses Windows APIs; Linux/Wine execution has not been
-validated. This repository can be cloned and edited on Linux, and the saved
-results can be inspected without running LTspice.
-
-From the repository root, create a Python environment and install dependencies:
+The simulation tools were developed for Windows with LTspice installed. Linux/Wine simulation execution has not been validated. From the repository root:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
-
-Open `simulation/ltspice/Oscillator_Final.asc` in LTspice for the final drawn
-circuit. Keep the model and symbol files in the same directory.
-
-```powershell
-# Preview the buildable resistor grid without running simulations
 .\.venv\Scripts\python.exe simulation/scripts/Buildable_sweep.py --dry-run
-
-# Run and measure the final schematic once
 .\.venv\Scripts\python.exe simulation/scripts/Measure_Oscillator_Final.py
-
-# Run one known candidate through the discrete-sweep pipeline
 .\.venv\Scripts\python.exe simulation/scripts/Buildable_sweep.py --check
-
-# Run 256 timing corners plus the separate four gain-resistor corners
-.\.venv\Scripts\python.exe simulation/scripts/tolerance_final.py
 ```
 
-Generated runs go into ignored `runs/` directories. The complete corner sweep
-can take a long time. For software assumptions, source-model details, and the
-differences between the schematic and sweep netlist, read
-[reproducing the simulations](docs/simulation.md).
+Open `simulation/ltspice/Oscillator_Final.asc` for the final original schematic. See [simulation documentation](docs/simulation.md) before comparing circuit variants. Saved results were not rerun for this publication update. Historical timing corners include 46 of 256 frequency failures; no unconditional ±1% production tolerance is claimed.
 
-## Demonstration and report
+## Build and use
 
-- [10-second demonstration video](evidence/Oscillator_demo_10_seconds.mp4):
-  circuit, manual potentiometer adjustment, and changing sine-wave amplitude.
-  The second half is a labeled 2.8× playback of the amplitude sweep.
-- [Archived Word report](docs/report/Oscillator_lab_report_performance_complete.docx).
-- [Measured spectrum near full output](docs/images/spectrum-full-output.png).
+Start with [the R1 overview](pcb/R1/README.md). Use the portable KiCad source and only the explicitly released manufacturing archive. Follow the assembly guide, current-limited power-up procedure and polarity checks before applying ±15 V. Keep the original reviewed snapshot intact when making a future revision, and rerun the relevant design checks after changes.
 
-## PCB next steps
-
-The reviewed R1 preserves the recovered circuit and physical resistor networks, adds the confirmed output pot, and uses the reserved parts. Start in [`pcb/README.md`](pcb/README.md) for the exact reviewed revision. Next steps are user release, a dated supplier quote, purchase approval, assembly and matched-condition hardware measurements. The new PCB has not been fabricated or tested.
-
-The fresh model including the confirmed 10 kΩ pot predicts approximately 4.64 Vpp at maximum. Historical spectrum cursor separation alone does not establish calibrated full-band intrinsic SFDR; see the [R1 engineering summary](pcb/R1/reports/final-engineering-summary.md) and [measurement procedure](pcb/R1/assembly/assembly-and-test.md).
-
-Third-party model notices are retained in their files. See
-[third-party notices](THIRD_PARTY_NOTICES.md). No open-source license has been
-selected for the project.
+The [older Word report](docs/report/Oscillator_lab_report_performance_complete.docx) and dated procurement/review documents remain historical evidence, not the current project status or live supplier quotes. No open-source license has been selected. Third-party model notices remain in place; see [third-party notices](THIRD_PARTY_NOTICES.md).

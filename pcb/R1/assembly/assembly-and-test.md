@@ -2,6 +2,8 @@
 
 Status: **ENGINEERING PROCEDURE — USE ONLY WITH THE REVIEWED, RELEASED BOARD REVISION**
 
+For detailed R1 hand-soldering instructions, exact resistor placement and polarity directions, use [the detailed assembly guide](R1-detailed-soldering-guide.html). This document retains the full measurement and acceptance procedure.
+
 Board revision: ______  Serial number: ______  Assembler: ______  Date: ______
 
 ## Required release data
@@ -46,7 +48,7 @@ For mechanical support, the board provides four 2.7 mm non-plated holes for M2.5
 ## Unpowered checks
 
 - Measure resistance from each rail to ground in both DMM polarities and compare across assembled boards.
-- Verify BNC shield to circuit ground and center pin to the intended output net; verify no center-to-shield short.
+- Verify BNC shield to circuit ground and center pin to the intended output net. Check for an unintended center-to-shield short with the potentiometer away from its minimum-output end: at minimum, its wiper intentionally connects the output close to ground and a continuity beep can be normal. Confirm resistance changes with rotation, then return to minimum for power-up.
 - Verify terminal pin order against the schematic and silkscreen.
 - Check diode and electrolytic polarity from both assembly drawing and electrical continuity, not legend alone.
 - Inspect all op-amp pins for bridges. Record resistance around the supply pins if the schematic provides expected values.
@@ -111,10 +113,10 @@ Use an explicit analysis band compatible with the analyzer's sample rate and ana
 
 ## Build disposition
 
-Visual inspection: PASS / FAIL  
-Unpowered checks: PASS / FAIL  
-Power-up: BLOCKED / PASS / FAIL  
-Functional waveform: BLOCKED / PASS / FAIL  
-SFDR: BLOCKED / ______ dBc; target met YES / NO; acceptance PASS / FAIL  
+Visual inspection: PASS / FAIL
+Unpowered checks: PASS / FAIL
+Power-up: BLOCKED / PASS / FAIL
+Functional waveform: BLOCKED / PASS / FAIL
+SFDR: BLOCKED / ______ dBc; target met YES / NO; acceptance PASS / FAIL
 Open anomalies / rework: ______
 

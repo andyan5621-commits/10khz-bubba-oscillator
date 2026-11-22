@@ -1,3 +1,5 @@
+> **Hardware results:** [November PCB and breadboard CSV data](hardware/README.md). The simulation records below are retained separately and are not hardware measurements.
+
 # Recorded simulation results
 
 These files preserve previously completed project runs, not new simulations

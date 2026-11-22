@@ -1,27 +1,27 @@
-# Oscillator PCB — R1 engineering review
+# R1 source manufacturing and assembly
 
-**Engineering checks passed; awaiting your final fabrication approval. No order has been placed.**
+**Manufactured and assembled.** The November bench evaluation demonstrates approximately 10.006 kHz operation and adjustable output approaching 4.6 Vpp. See the [final report](../../docs/report/final-project-report.md) for scope and limits; selected-component spectral differences are not certified SFDR.
 
-[Complete R1 engineering delivery ZIP](deliverables/Oscillator-PCB-R1-Engineering-Review.zip) · [Delivery integrity result](deliverables/delivery-integrity.json). The archive contains 117 hash-verified files; it is documentation plus source, not the ZIP to upload to a PCB manufacturer.
+## Design and manufacture
 
-The native KiCad design preserves the recovered working oscillator and confirmed prototype values. It uses the approved Alps RK09K1130A5R potentiometer, exact reserved through-hole parts, 44 physical resistor elements and eight bare probe pads.
+- [Portable KiCad 9 project](fabrication/review-packages/R1-review-03/source/oscillator.kicad_pro)
+- [Released Gerber and drill archive](fabrication/releases/R1/Oscillator-PCB-R1-Gerbers.zip)
+- [Manufacturing approval and hash](fabrication/releases/R1/RELEASE.md)
+- [Per-component BOM](bom/per-component.csv) and [grouped BOM](bom/grouped-bom.csv)
+- [Original independent review](verification/independent-review.md)
+- [Original export inspection](reports/export-inspection.md)
+- [Historical complete engineering ZIP](deliverables/Oscillator-PCB-R1-Engineering-Review.zip)
 
-- [Final engineering summary](reports/final-engineering-summary.md)
-- [Independent verification](verification/independent-review.md)
-- [Fabrication export inspection](reports/export-inspection.md)
-- [Open the portable KiCad project](fabrication/review-packages/R1-review-03/source/oscillator.kicad_pro)
-- [Gerber/drill review ZIP](fabrication/review-packages/R1-review-03/R1-review-03-gerbers-UNRELEASED.zip)
-- [Per-component BOM](bom/per-component.csv), [grouped BOM](bom/grouped-bom.csv), [procurement quantities](bom/draft_bom.csv)
-- [Assembly and test instructions](assembly/assembly-and-test.md)
-- [Printable schematic](assembly/drawings/schematic-R1.pdf), [placement drawing](assembly/drawings/placement-R1.pdf)
-- [Task board](reports/task-board.md), [decisions](reports/decision-log.md), [risks](reports/risk-register.md)
+## Assembly and evaluation
 
-The board is 95 × 79 mm, two layers, nominal 1.6 mm FR-4 / 35 µm copper / ENIG. Final ERC, DRC, unconnected and native schematic-parity counts are all zero. Independent engineering package review passed; ordinary incoming fit and physical performance validation remain required. Earlier review-01/02 directories are superseded and are not manufacturing inputs.
+- [Detailed soldering guide](assembly/R1-detailed-soldering-guide.md)
+- [Clear six-page component map](assembly/drawings/clear-map/R1-clear-component-map.pdf)
+- [Assembly and test procedure](assembly/assembly-and-test.md)
+- [Printable schematic](assembly/drawings/schematic-R1.pdf)
+- [Original placement drawing](assembly/drawings/placement-R1.pdf)
+- [Hardware measurement log](reports/hardware-measurement-log.md)
+- [Original photos and spectra](../../evidence/hardware/2026-11-20/README.md)
 
-The `source` folder in the final candidate keeps the project, schematic, board, rules and custom libraries together for KiCad 9. Working directories remain under schematic/ and pcb/; the candidate is an immutable reviewed snapshot. Do not edit the snapshot and then reuse its checks or hashes.
+The board remains the reviewed 95 × 79 mm R1 design. No electrical source changes accompany the documentation update. Preserve R1-review-03, its manifests and original check outputs. Dated review/quote files and the historical delivery ZIP retain their issue-date wording, including pending approval or fabrication statements; those statements are superseded for current status by this index and the final report. They must not be silently rewritten and presented as original independent reviews.
 
-No new PCB has been physically tested. Simulated SFDR is not measured hardware performance. The intended October 31 assembly date depends on the live manufacturing/shipping quote and parts receipt; it is not guaranteed. Both final fabrication release and any purchase require explicit user approval.
-
-## Current procurement update
-
-[22 October supplier pricing, actual ENIG lead times, and remaining purchases](fabrication/purchase-plan-2026-10-22.md). This later update supersedes earlier generic one-day manufacturing advertising. It does not modify the immutable reviewed source or ZIPs.
+The design BOM's historical SELECTED_NOT_RELEASED labels describe its original procurement state, not present inventory. Do not use those labels to infer that the assembled parts are still missing. Earlier review-01/02 packages are superseded and are not ordering inputs.

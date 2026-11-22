@@ -1,3 +1,5 @@
+> **Current status 22 November 2026:** this is a dated engineering record. The PCB has since been manufactured, assembled and functionally tested. See the [final project report](../../../docs/report/final-project-report.md) and [hardware measurement log](hardware-measurement-log.md). The original record follows.
+
 # Master task board
 
 Updated: 2026-10-22. Status represents actual work, not scheduled completion.

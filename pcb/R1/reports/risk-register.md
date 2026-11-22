@@ -1,3 +1,5 @@
+> **Current status 22 November 2026:** this is a dated engineering record. The PCB has since been manufactured, assembled and functionally tested. See the [final project report](../../../docs/report/final-project-report.md) and [hardware measurement log](hardware-measurement-log.md). The original record follows.
+
 # Engineering risk register
 
 Updated 22 October 2026 after Gate B approval. Closed items remain visible for traceability.

@@ -1,23 +1,18 @@
-# Oscillator PCB — reviewed R1
+# R1 PCB implementation
 
-22 October 2026. Engineering Gates A–D PASS; user fabrication release and purchase approval pending. No PCB hardware has been fabricated, assembled or tested.
+**Current status 22 November 2026:** manufacture approved, three AISLER PCBs received, one R1 board assembled and functionally tested. The [final report](../docs/report/final-project-report.md) and [hardware log](R1/reports/hardware-measurement-log.md) give the measured results and limitations.
 
-- [Complete engineering ZIP](R1/deliverables/Oscillator-PCB-R1-Engineering-Review.zip)
+- [R1 source and build index](R1/README.md)
 - [Portable KiCad 9 project](R1/fabrication/review-packages/R1-review-03/source/oscillator.kicad_pro)
-- [Exact Gerber/drill ZIP](R1/fabrication/review-packages/R1-review-03/R1-review-03-gerbers-UNRELEASED.zip)
-- [Engineering summary](R1/reports/final-engineering-summary.md)
-- [Independent verification](R1/verification/independent-review.md)
-- [BOM and quantities still to purchase](R1/bom/draft_bom.csv)
+- [Released Gerber and drill ZIP](R1/fabrication/releases/R1/Oscillator-PCB-R1-Gerbers.zip)
+- [Release and provenance record](R1/fabrication/releases/R1/RELEASE.md)
+- [Per-component BOM](R1/bom/per-component.csv)
+- [Independent engineering review](R1/verification/independent-review.md)
+- [Soldering guide](R1/assembly/R1-detailed-soldering-guide.md)
 - [Assembly and measurement procedure](R1/assembly/assembly-and-test.md)
-- [Current manufacturer prices, delivery estimate and remaining shopping list](R1/fabrication/purchase-plan-2026-10-22.md)
-- [Ordering specifications](R1/fabrication/ordering-guidance.md)
 
-![R1 PCB top view](R1/pcb/board-top.png)
+![Native R1 layout](R1/pcb/board-top.png)
 
-95 × 79 mm; 2 layers; nominal 1.6 mm FR-4; 1 oz copper; ENIG. ERC, DRC, unconnected and schematic parity counts are zero. The exact approved Alps RK09K1130A5R is used. Four dual OPA1656 packages, 44 physical fixed resistors and the original effective R/C values preserve the reference circuit.
+95 × 79 mm, two copper layers, nominal 1.6 mm FR-4, 35 µm copper and ENIG. Archived ERC/DRC and native parity checks passed. Those are design-file results, not a physical-performance certification. Earlier snapshots remain historical; only R1-review-03 underlies the released archive. No source geometry was changed during final documentation.
 
-R1-review-03 is the only current fabrication candidate. Earlier review snapshots and routing candidates in R1 are retained engineering history, not manufacturing inputs. Upload only the specific Gerber/drill ZIP after user release; do not upload the complete documentation ZIP to a fabrication service.
-
-The R1 directory is a byte-preserved snapshot of engineering workspace commit 3210cab. Its delivery manifest and native-file hashes remain valid. Large simulator waveforms, installed dependencies and machine-local CAD sessions are intentionally excluded. Historical placeholders in the sibling design/fabrication/assembly/validation folders are superseded by R1.
-
-Incoming fit checks and measured hardware validation remain necessary. The 3D preview omits some through-hole part bodies and is not an enclosure-fit model. No delivery date or physical SFDR is guaranteed.
+Supplier prices, shipping estimates and shopping lists dated October 2026 are historical. Recheck availability and quotes before a new purchase. Intrinsic SFDR and temperature stability remain unqualified; the assembled board's functional operation is documented.

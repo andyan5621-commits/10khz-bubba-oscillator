@@ -1,0 +1,8 @@
+{
+  "source": "fabrication\\review-packages\\R1-review-03\\source\\oscillator.kicad_pcb",
+  "source_sha256": "a4f358f10eaf822501065362decd702d36b8ac9826cc2c7e55d44460478eb4e2",
+  "fixed_resistors_covered": 44,
+  "resistor_bom_values_match": true,
+  "components_on_last_page": 25,
+  "board_or_manufacturing_files_modified": false
+}

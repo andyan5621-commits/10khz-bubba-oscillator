@@ -1,0 +1,4 @@
+capture,frequency_hz,displayed_vpk_v,calculated_vpp_v,cursor_difference_db,cursor_frequency_separation_hz,sinad_db,displayed_sample_rate_ksps,span_hz
+1,10006.08,2.2,4.4,90.67,30433.56,70.52,180.18,90000
+2,10006.27,2.2,4.4,89.7,30433.56,70.78,180.18,90000
+3,10006.29,2.2,4.4,90.58,30433.56,70.73,180.18,90000

@@ -1,3 +1,5 @@
+> **November PCB evidence:** [assembled-board photographs and repeated spectral captures](hardware/2026-11-20/README.md). See the [final project report](../docs/report/final-project-report.md) for the current interpretation.
+
 # Hardware evidence
 
 - `Oscillator_demo_10_seconds.mp4`: 1080×1920 H.264, 30 fps, exactly 10 seconds;

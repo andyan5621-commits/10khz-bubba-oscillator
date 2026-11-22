@@ -1,4 +1,16 @@
-# Breadboard measurement evidence
+# Hardware measurement overview
+
+Current results are documented in the [final project report](report/final-project-report.md), [complete hardware log](../pcb/R1/reports/hardware-measurement-log.md), [CSV transcriptions](../results/hardware/README.md) and [November photographs and spectra](../evidence/hardware/2026-11-20/README.md).
+
+The PCB operates near 10.006 kHz with adjustable output near zero to approximately 4.6 Vpp. Three final captures at displayed 2.20 Vpk give 89.70–90.67 dB cursor separation from a selected component, not independently validated full-band SFDR. These use AI0, ±10 V, 90 kHz span, 180.18 kS/s, 3200 lines, Blackman–Harris and five RMS exponential averages, after ten minutes warm-up. The scope was disconnected and Vpp was calculated as twice Vpk.
+
+No powered-off peak subtraction was applied. Supply-associated interference and aliasing remain unresolved. Rounded THD of 0.00% is not zero distortion. Timed drift, measured startup time and instrument residual qualification are not available. The matched-amplitude breadboard/PCB comparison is preliminary and does not establish spectral improvement.
+
+## Archived breadboard evidence
+
+The original account below is retained for its configuration and media provenance. Its estimated-SFDR description is limited by selected-component cursor measurement and unqualified instrument residual; it is not an intrinsic acceptance certificate.
+
+### Historical account
 
 The final output was measured at the potentiometer wiper using an external
 ±15 V supply. NI myDAQ / NI ELVISmx provided frequency-domain measurements;
