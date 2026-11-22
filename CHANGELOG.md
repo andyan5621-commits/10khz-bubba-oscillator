@@ -1,6 +1,14 @@
 # Change history
 
-## 22 November 2026
+## 22 November 2026 consistency review
+
+- Updated GitHub About description and report link to reflect the assembled PCB.
+- Replaced four obsolete planned-PCB placeholder pages with current navigation.
+- Clarified historical breadboard versus PCB configurations, amplitude targets and simulation variants.
+- Corrected evidence-folder references and expanded documentation checks to all tracked Markdown pages.
+- Marked LTspice schematic/symbol files to avoid GitHub identifying them as Adventure Game Studio code.
+
+## 22 November 2026 publication
 
 - Published the final R1 project report and updated current project status to manufactured, assembled and functionally tested.
 - Added builder-reported rail, frequency, amplitude and current readings; amplitude sweeps; three repeated spectral captures; and photographs of both board sides.

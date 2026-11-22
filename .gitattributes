@@ -5,10 +5,16 @@
 *.csv text eol=lf
 *.asc text
 *.asy text
+# LTspice files are not Adventure Game Studio source code.
+*.asc linguist-detectable=false
+*.asy linguist-detectable=false
 *.lib text
 *.LIB text
 *.net text
 *.png binary
 *.jpg binary
+*.jpeg binary
+*.pdf binary
+*.zip binary
 *.mp4 binary
 *.docx binary

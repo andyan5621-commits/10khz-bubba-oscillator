@@ -1,5 +1,7 @@
 # Documentation index
 
+[Repository consistency checks](../tools/check_documentation.py) can be run with `python tools/check_documentation.py` from the repository root. They check local Markdown links, original evidence hashes, released board/archive identity and numeric transcriptions. They do not rerun ERC/DRC or physical measurements.
+
 The [final project report](report/final-project-report.md), dated 22 November 2026, is the canonical end-project document. It supersedes earlier project-status statements while preserving dated engineering evidence.
 
 - [Design and effective values](design.md)

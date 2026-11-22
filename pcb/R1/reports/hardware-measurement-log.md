@@ -66,9 +66,11 @@ Source: user-supplied screenshot of a seven-row table. The user explicitly ident
 - Replacing leads did not reliably remove the feature. Turning the Delta main switch OFF made the feature disappear. This implicates a supply-associated interference path; its physical source, true frequency, possible aliasing and coupling mechanism remain unproven.
 - A shorted myDAQ input baseline had no corresponding prominent edge feature. This baseline is not a measurement of analyzer distortion with a full-scale 10 kHz signal.
 - A roughly 19 kHz non-harmonic peak was also reported. Exact frequency, amplitude and source remain unconfirmed. Non-harmonic discrete tones count in SFDR when inside the stated band.
-- No powered-off spectrum was subtracted. The 100 kHz feature cannot be reliably qualified at the Nyquist endpoint of a 200 kS/s acquisition. Restricting the reported band must be explicit and does not resolve the interference or potential aliasing within that band.
+- No powered-off subtraction was applied to the published transcriptions. The 100 kHz feature cannot be reliably qualified at the Nyquist endpoint of a 200 kS/s acquisition. Restricting the reported band must be explicit and does not resolve the interference or potential aliasing within that band.
 
-### Evidence still needed for final spectral reporting
+### Evidence requests at the time of the initial sweep
+
+The following requests are historical. The subsequent repeat-capture entry resolves Vpp calculation, warm-up, scope disconnection and the visible settings for those captures. Raw data, maximum-spur selection and instrument residual remain unavailable.
 
 1. Confirm the inferred frequency and SFDR headings, actual measurement band, acquisition settings and whether Vpp was measured or calculated.
 2. Supply an original spectrum/export showing the fundamental level, largest spur level and its frequency for each claimed SFDR result; preferably raw time-domain recordings with sample rate.
@@ -79,7 +81,7 @@ Source: user-supplied screenshot of a seven-row table. The user explicitly ident
 
 User confirmed 10 minutes of warm-up and that the Keysight oscilloscope was neither used nor connected during the SFDR experiment. User confirmed all tabulated Vpp values were calculated as 2 x Vpk. These confirmations supersede the corresponding unknowns above.
 
-Original supplied files preserved in `reports/evidence/2026-11-20/`: `repeat-01.png`, `repeat-02.png`, `repeat-03.png`, `assembled-bottom.jpeg`, `assembled-top.jpeg`.
+Original supplied files preserved in [the repository evidence folder](../../../evidence/hardware/2026-11-20/README.md): `repeat-01.png`, `repeat-02.png`, `repeat-03.png`, `assembled-bottom.jpeg`, `assembled-top.jpeg`.
 
 | Capture | Displayed fundamental (Hz) | Vpk (V) | Calculated Vpp (V) | Displayed cursor difference (dB) | Displayed cursor frequency separation (Hz) | Displayed SINAD (dB) |
 |---|---|---|---|---|---|---|
@@ -103,7 +105,7 @@ Enough evidence is now available to write a factual implementation and prelimina
 
 ## Breadboard comparison supplied 20 November 2026
 
-User identifies the following screenshot as measurements from the breadboard prototype, supplied for comparison. Original preserved as `reports/evidence/2026-11-20/breadboard-comparison-table.png`. Acquisition date and full historical setup are not established by this table. Its original heading explicitly says cursor separation, not validated SFDR. Approximate Vpp is twice displayed Vpk.
+User identifies the following screenshot as measurements from the breadboard prototype, supplied for comparison. Original preserved as [the breadboard comparison image](../../../evidence/hardware/2026-11-20/breadboard-comparison-table.png). Acquisition date and full historical setup are not established by this table. Its original heading explicitly says cursor separation, not validated SFDR. Approximate Vpp is twice displayed Vpk.
 
 | Displayed Vpk (V) | Approximate Vpp (V) | Detected frequency (Hz) | Cursor separation (dB) |
 |---|---|---|---|

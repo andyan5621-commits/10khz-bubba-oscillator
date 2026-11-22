@@ -8,4 +8,4 @@
   amplitude/averaging qualifications in `../docs/measurements.md` before using it.
 - Still images and captions are available in `../docs/images/` and the report.
 
-This evidence documents the breadboard, not a future PCB.
+The video and original captured-analyzer-readouts.csv document the breadboard. The November hardware folder documents the assembled PCB. Neither dataset establishes calibrated intrinsic SFDR.

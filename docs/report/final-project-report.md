@@ -8,7 +8,7 @@ This project developed a 10 kHz analog sine-wave source through analytical desig
 
 The PCB preserves the working breadboard topology and effective resistor and capacitor values. Its measured frequency is closer to nominal than the breadboard's approximately 10.053 kHz. This comparison establishes nominal frequency error for the tested builds; it does not establish improved temperature stability, long-term drift or production tolerance.
 
-The spectral evidence supports approximately 90 dB separation between the fundamental and a selected component at maximum output. It does not establish calibrated full-band intrinsic SFDR. Supply-related interference, analyzer limitations and uncertainty over maximum-spur selection remain explicit limitations. The project is complete as a documented design, manufactured implementation and functional bench evaluation; precision spectral qualification remains open.
+The spectral evidence supports approximately 90 dB separation between the fundamental and a selected component at the 4.40 Vpp test setting. It does not establish calibrated full-band intrinsic SFDR. Supply-related interference, analyzer limitations and uncertainty over maximum-spur selection remain explicit limitations. The project is complete as a documented design, manufactured implementation and functional bench evaluation; precision spectral qualification remains open.
 
 ## Reading and reproduction
 
@@ -149,7 +149,7 @@ The builder confirmed ten minutes of warm-up. The final captures show NI ELVISmx
 
 An earlier scope cycle-average result near −58 mV differs from the qualitative DMM observation. Instrument offset, acquisition conditions and actual circuit offset were not separated; the report does not replace this discrepancy with a fabricated exact zero.
 
-The maximum output is below an exact 5.00 Vpp requirement. It is consistent in scale with the pot-loaded nominal model. Values were not changed merely to force a higher amplitude. The output remains intended for high-impedance measurement or use.
+The observed maximum is below 5.00 Vpp; the implementation objective was approximately 5 Vpp rather than a separately established exact 5.00 Vpp acceptance limit. It is consistent in scale with the pot-loaded nominal model. Values were not changed merely to force a higher amplitude. The output remains intended for high-impedance measurement or use.
 
 ## Amplitude sweep and breadboard comparison
 
@@ -195,7 +195,7 @@ SFDR is the fundamental-to-largest-other-discrete-tone ratio within a stated ban
 
 A feature near the 100 kHz edge of an earlier 200 kS/s acquisition persisted with the PCB supply outputs off while the Delta main switch remained on. It disappeared when the supply main switch was turned off. Shorting the myDAQ inputs to their reference removed the prominent feature. Replacing power leads did not reliably solve it. These observations support a supply-associated interference path but do not establish its true frequency, exact coupling path or whether the displayed feature is aliased.
 
-A non-harmonic feature near 19 kHz was also reported. A real output tone at that frequency would count in SFDR; not being a harmonic is not a reason to omit it. Powered-off peaks were not subtracted from powered spectra because their phase and amplitude can change with the circuit's operating state.
+A non-harmonic feature near 19 kHz was also reported. A real output tone at that frequency would count in SFDR; not being a harmonic is not a reason to omit it. No powered-off subtraction was applied when transcribing or comparing the supplied readings. Background subtraction was not recommended because phase and amplitude can change with the circuit's operating state.
 
 NI specifies a maximum myDAQ analog-input rate of 200 kS/s and no analog-input anti-alias filter. At the final displayed 180.18 kS/s, Nyquist is approximately 90.09 kHz, leaving the 90 kHz span edge extremely close to the sampling limit. Restricting a plot to 90 kHz neither proves the absence of higher-frequency input energy nor prevents that energy from aliasing into the plotted band. The proposed 100 Hz–90 kHz evaluation is therefore a provisional reporting band, not a metrologically qualified passband.
 

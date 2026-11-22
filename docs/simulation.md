@@ -48,9 +48,7 @@ harmonic result considers H2–H40; the all-bin result additionally considers ot
 resolved bins over the same approximate bandwidth. For the saved winner both
 give 90.783 dB, with H3 dominant and bandwidth approximately 399.4 kHz.
 
-These are deterministic model results, not calibrated noise measurements. The
-hardware spectra use a 0–100 kHz span, a seven-term Blackman–Harris window and
-averaging, so simulation and measurement are not identical analyses.
+These are deterministic model results, not calibrated noise measurements. The historical breadboard spectra use a 0–100 kHz span with Blackman–Harris windowing and averaging. The November PCB captures instead show a 0–90 kHz span at 180.18 kS/s with five RMS exponential averages. Simulation and the two hardware datasets are not identical analyses.
 
 ## Model provenance
 

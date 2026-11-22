@@ -35,8 +35,7 @@ The near-full-output capture is the principal spectral evidence. A fleeting,
 unrecorded observation near 93 dB is not used as the project's headline result.
 
 Time-domain images document 5.07, 3.82 and 0.800 Vpp; they were recorded separately
-from the myDAQ spectra, not as paired samples. The maximum output supports
-adjustment through 5 Vpp. The near-zero display does not establish an exact zero
+from the myDAQ spectra, not as paired samples. The historical breadboard scope capture reaches approximately 5 Vpp; this is not the PCB maximum, which was separately reported around 4.6 Vpp. The near-zero display does not establish an exact zero
 residual; SFDR is undefined for an exactly zero signal. Displayed THD=0.00% does
 not prove zero harmonic distortion.
 

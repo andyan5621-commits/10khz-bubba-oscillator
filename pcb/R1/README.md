@@ -19,6 +19,7 @@
 - [Assembly and test procedure](assembly/assembly-and-test.md)
 - [Printable schematic](assembly/drawings/schematic-R1.pdf)
 - [Original placement drawing](assembly/drawings/placement-R1.pdf)
+- [Project closeout](reports/project-closeout.md)
 - [Hardware measurement log](reports/hardware-measurement-log.md)
 - [Original photos and spectra](../../evidence/hardware/2026-11-20/README.md)
 

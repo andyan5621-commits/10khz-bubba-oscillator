@@ -12,18 +12,15 @@ parameter called `Q = 2.5` is the **limiter resistor ratio**, not filter Q.
 
 R11 = 2 kΩ || 100 kΩ = 1,960.784 Ω; R12 = 1 kΩ. Both remain installed in the
 breadboard. The 10 kΩ potentiometer connects from their Vfinal junction to ground,
-and its wiper is the measured adjustable output. It is not included in the
-optimization simulations. Its loading and the lack of a post-wiper buffer
+and its wiper is the measured adjustable output. It is absent from the archived discrete optimization winner, but is included in the later R1 pot-loaded validation simulations. Its loading and the lack of a post-wiper buffer
 make delivered amplitude load-dependent.
 
 Four dual OPA1656 packages supply seven active signal-path channels. The hardware
 uses external ±15 V rails, eight local 100 nF bypass capacitors (one per rail per
-module), and two 10 µF bulk capacitors. One faulty amplifier channel was excluded;
-the functioning channel in that module provided U6.
+module), and two 10 µF bulk capacitors. On the historical breadboard, one faulty amplifier channel was excluded; the functioning channel in that module provided U6. The R1 PCB uses four dual devices with the unused eighth channel terminated as a grounded follower; no faulty PCB channel was reported.
 
 See [resistor-bom.csv](resistor-bom.csv) for the physical resistor combinations
-and the [report](report/Oscillator_lab_report_performance_complete.docx) for the
-derivations and full component table. The equivalent values in the LTspice
+and the [final report](report/final-project-report.md) for implementation and results. The [archived breadboard report](report/Oscillator_lab_report_performance_complete.docx) retains the original derivations. The equivalent values in the LTspice
 schematic represent these combinations, not individual purchased resistors.
 
 ## Recorded design progression
